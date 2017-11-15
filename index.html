@@ -25,6 +25,7 @@
 	<meta name="msapplication-TileColor" content="#334657">
 	<meta name="msapplication-TileImage" content="images/ms-icon-144x144.png">
 	<link rel="stylesheet" type="text/css" href="styles/landing.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 </style>
 </head>
 <body>
@@ -54,6 +55,129 @@
 		<div id="portfolio" class="section">
 			<h4 id="meh" class="header">Portfólio</h4>
 			<div class="apps">
+				<div class="primary-app2">
+					<div class="app-container">
+						<a class="primary-app2-foo" href="https://play.google.com/store/apps/details?id=com.spreadsong.freebooks">
+							<div class="primary-app-img-container">
+								<img src="images/app_freebooks.png">
+							</div>
+							<div class="app-text-container">
+								<p class="app-title">Free Books</p>
+								<p class="app-desc">Najväčšie svetové literárne klasiky v ebook a audiobook podobe</p>
+								<p class="app-dl">2 500 000 stiahnutí</p>
+							</div>
+						</a>
+					</div>
+					<div class="images-container-wrapper">
+						<div class="back-scroll">
+							<img src="images/back.svg">
+						</div>
+						<div class="images-container">
+							<div class="images-container-inner">
+								<div class="image-item-wrapper">
+									<img src="images/screens/freebooks1.png">
+								</div>
+								<div class="image-item-wrapper">
+									<img src="images/screens/freebooks2.png">
+								</div>
+								<div class="image-item-wrapper">
+									<img src="images/screens/freebooks3.png">
+								</div>
+								<div class="image-item-wrapper">
+									<img src="images/screens/freebooks1.png">
+								</div>
+								<div class="image-item-wrapper">
+									<img src="images/screens/freebooks1.png">
+								</div>
+							</div>
+						</div>
+						<div class="next-scroll">
+							<img src="images/next.svg">
+						</div>
+					</div>
+				</div>
+				<div class="primary-app2">
+					<div class="app-container">
+						<a class="primary-app2-foo" href="https://play.google.com/store/apps/details?id=com.sygic.aura">
+							<div class="primary-app-img-container">
+								<img src="images/app_sygic.png">
+							</div>
+							<div class="app-text-container">
+								<p class="app-title">Sygic GPS Navigácia</p>
+								<p class="app-desc">Najpokročilejšia GPS navigácia pre Android (súčasť tímu)</p>
+								<p class="app-dl">100 000 000 stiahnutí</p>
+							</div>
+						</a>
+					</div>
+					<div class="images-container-wrapper">
+						<div class="back-scroll">
+							<img src="images/back.svg">
+						</div>
+						<div class="images-container">
+							<div class="images-container-inner">
+								<div class="image-item-wrapper">
+									<img src="images/screens/sygic1.jpg">
+								</div>
+								<div class="image-item-wrapper">
+									<img src="images/screens/sygic2.jpg">
+								</div>
+								<div class="image-item-wrapper">
+									<img src="images/screens/sygic3.jpg">
+								</div>
+								<div class="image-item-wrapper">
+									<img src="images/screens/sygic1.jpg">
+								</div>
+								<div class="image-item-wrapper">
+									<img src="images/screens/sygic2.jpg">
+								</div>
+							</div>
+						</div>
+						<div class="next-scroll">
+							<img src="images/next.svg">
+						</div>
+					</div>
+				</div>
+				<div class="primary-app2">
+					<div class="app-container">
+						<a class="primary-app2-foo" href="https://play.google.com/store/apps/details?id=sk.ursus.bazosagent">
+							<div class="primary-app-img-container">
+						<img src="images/app_bagent.png">
+					</div>
+						<div class="app-text-container">
+							<p class="app-title">Bazoš Agent</p>
+							<p class="app-desc">Strážny pes, ktorý automaticky hľadá nové inzeráty na Bazoši za Vás</p>
+							<p class="app-dl">100 000 stiahnutí</p>
+						</div>
+						</a>
+					</div>
+					<div class="images-container-wrapper">
+						<div class="back-scroll">
+							<img src="images/back.svg">
+						</div>
+						<div class="images-container">
+							<div class="images-container-inner">
+								<div class="image-item-wrapper">
+									<img src="images/screens/bagent1.jpg">
+								</div>
+								<div class="image-item-wrapper">
+									<img src="images/screens/bagent2.jpg">
+								</div>
+								<div class="image-item-wrapper">
+									<img src="images/screens/bagent3.jpg">
+								</div>
+								<div class="image-item-wrapper">
+									<img src="images/screens/bagent1.jpg">
+								</div>
+								<div class="image-item-wrapper">
+									<img src="images/screens/bagent2.jpg">
+								</div>
+							</div>
+						</div>
+						<div class="next-scroll">
+							<img src="images/next.svg">
+						</div>
+					</div>
+				</div>
 				<a class="primary-app" href="https://play.google.com/store/apps/details?id=com.sygic.aura">
 					<div class="primary-app-img-container">
 						<img src="images/app_sygic.png">
@@ -353,6 +477,22 @@
 
 	  ga('create', 'UA-89533460-1', 'auto');
 	  ga('send', 'pageview');
+	</script>
+	<script>
+		$(".back-scroll").click(function(event){
+			scrollGallery(event.target, false);
+    		return false;
+		});
+		$(".next-scroll").click(function(event){
+			scrollGallery(event.target, true);
+    		return false;
+		});
+		function scrollGallery(button, nextOrBack) {
+			var imagesContainer = button.parentElement.getElementsByClassName("images-container-inner")[0];
+			$(imagesContainer).animate({
+				scrollLeft: nextOrBack ? "+=300" : "-=300"
+    		}, 350);
+		}
 	</script>
 </body>
 </html>

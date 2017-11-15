@@ -54,7 +54,7 @@ a:hover {
 }
 .section {
 	padding: 80px 50px 120px 50px;
-	width: 850px;
+	width: 1200px;
 }
 #main-wrapper {
 	background-color: #f6f8fa;
@@ -191,7 +191,7 @@ PORTFOLIO
 	flex-wrap: wrap;
 	justify-content: center;
 }
-.primary-app, .secondary-app, .ternary-app {
+.primary-app, .secondary-app, .ternary-app, .primary-app2 {
 	background-color: #fff;
 	border-radius: 2px;
 	box-shadow: 0 1px 3px rgba(0,0,0,0.16), 0 1px 3px rgba(0,0,0,0.23);
@@ -201,7 +201,87 @@ PORTFOLIO
 .primary-app {
 	width: 30%;
 }
-.primary-app:hover, .secondary-app:hover, .ternary-app:hover {
+.primary-app2 {
+	width: 100%;
+	display: flex;
+	flex-direction: row;
+	justify-content: flex-start;
+}
+.primary-app2 .primary-app-img-container {
+	background-color: #FFF;
+}
+.app-container {
+	width: 40%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+/* 
+Gallery
+*/
+.images-container-wrapper {
+	margin-top: 60px;
+	margin-bottom: 60px;
+	width: 60%;
+	position: relative;
+}
+.images-container-wrapper:hover > .back-scroll {
+    opacity: 1;
+
+}
+.images-container-wrapper:hover > .next-scroll {
+    opacity: 1;
+}
+.images-container-inner {
+	padding-top: 20px;
+	padding-left: 2px;
+	padding-bottom: 20px;
+	display: flex;
+	flex-direction: row;
+	justify-content: flex-start;
+	overflow-x: hidden;
+}
+.image-item-wrapper {
+	padding: 0 20px 0 0;
+	width: 240px;
+	height: 100%;
+	overflow:visible;
+}
+.image-item-wrapper img {
+	width: 240px;
+	object-fit: contain;
+	border-radius: 4px;
+	box-shadow: 0 1px 3px rgba(0,0,0,0.16), 0 1px 3px rgba(0,0,0,0.23);
+}
+.primary-app2-foo {
+	width: 250px;
+	text-align: center;
+}
+.back-scroll, .next-scroll {
+	user-select: none;
+	position: absolute;
+	top: 50%;
+	margin-top: -40px;
+	height: 80px;
+	width: 30px;
+	background-color: #424242;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	opacity: 0;
+	box-shadow: 0 1px 3px rgba(0,0,0,0.16), 0 1px 3px rgba(0,0,0,0.23);
+	transition: opacity 250ms;
+}
+.back-scroll {
+	left: 0;
+	border-radius: 0 4px 4px 0;
+}
+.next-scroll {
+	right: 0;
+	border-radius: 4px 0 0 4px;
+}
+.primary-app:hover, .secondary-app:hover, .ternary-app:hover, .primary-app2:hover {
   box-shadow: 0 3px 10px rgba(0,0,0,0.25), 0 5px 15px rgba(0,0,0,0.22);
 }
 .primary-app-img-container, .secondary-app-img-container, .ternary-app-img-container {
