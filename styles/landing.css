@@ -218,22 +218,6 @@ PORTFOLIO
 	object-fit: contain;
 	z-index: 1;
 }
-#bar-wrapper {
-	position: relative;
-}
-#video-wrapper {
-	z-index: 1;
-	position: absolute;
-	right: 0;
-	top: 0;
-}
-#video {
-	width: 36px;
-	padding-top: 5px;
-	padding-right: 10px;
-	height: 36px;
-	object-fit: contain;
-}
 .app-text-container {
 	padding: 15px;
 }
