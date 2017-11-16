@@ -191,18 +191,24 @@ PORTFOLIO
 	flex-wrap: wrap;
 	justify-content: center;
 }
-.primary-app, .secondary-app, .ternary-app, .primary-app2 {
-	background-color: #fff;
-	border-radius: 2px;
-	box-shadow: 0 1px 3px rgba(0,0,0,0.16), 0 1px 3px rgba(0,0,0,0.23);
-	margin: 10px;
-	transition: box-shadow 0.3s cubic-bezier(.25,.8,.25,1);
+.primary-app-wrapper, .secondary-app-wrapper, .ternary-app-wrapper, .primary-app2-wrapper {
+	padding: 10px;
+	box-sizing: border-box;
 }
-.primary-app {
-	width: 30%;
+.primary-app, .secondary-app, .ternary-app, .primary-app2 {
+	border-radius: 4px;
+	box-shadow: 0 1px 3px rgba(0,0,0,0.16), 0 1px 3px rgba(0,0,0,0.23);
+	transition: box-shadow 0.3s cubic-bezier(.25,.8,.25,1);
+	display: block;
+	width: 100%;
+}
+.primary-app-wrapper {
+	width: 25%;	
+}
+.primary-app2-wrapper {
+	width: 100%;
 }
 .primary-app2 {
-	width: 100%;
 	display: flex;
 	flex-direction: row;
 	justify-content: flex-start;
@@ -221,7 +227,7 @@ PORTFOLIO
   box-shadow: 0 3px 10px rgba(0,0,0,0.25), 0 5px 15px rgba(0,0,0,0.22);
 }
 .primary-app-img-container, .secondary-app-img-container, .ternary-app-img-container {
-	border-radius: 2px 2px 0 0;
+	border-radius: 4px 4px 0 0;
 	display: flex;
 	justify-content: center;
 	align-items: center;
@@ -250,8 +256,10 @@ PORTFOLIO
 	margin-top: 5px;
 	font-size: 0.7em;
 }
+.secondary-app-wrapper {
+	width: 50%
+}
 .secondary-app {
-	width: 46%;
 	display: flex;
 	flex-direction: row;
 	justify-content: flex-start;
@@ -266,8 +274,8 @@ PORTFOLIO
 	width: 80%;
 	object-fit: contain;
 }
-.ternary-app {
-	width: 13.7%;
+.ternary-app-wrapper {
+	width: 16.66%;
 }
 .ternary-app-img-container img {
 	padding: 15px;
