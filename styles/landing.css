@@ -307,12 +307,11 @@ Gallery
 }
 .image-item-wrapper {
 	padding: 0 20px 0 0;
-	width: 240px;
 	height: 100%;
 	overflow:visible;
 }
 .image-item-wrapper img {
-	width: 240px;
+	height: 340px;
 	object-fit: contain;
 	border-radius: 4px;
 	box-shadow: 0 1px 3px rgba(0,0,0,0.16), 0 1px 3px rgba(0,0,0,0.23);
@@ -558,9 +557,9 @@ CONTACT
 /*
 RESPONSIVE
 */
-@media only screen and (max-width: 819px) {
+@media only screen and (max-width: 1299px) {
     .section {
-        width: auto;
+        width: 100%;
     }
 	#references-container {
 		padding: 0;
@@ -569,7 +568,7 @@ RESPONSIVE
 		font-size: 3.5em;
 	}
 }
-@media only screen and (max-width: 639px) {
+@media only screen and (max-width: 819px) {
 	.section {
 		padding: 80px 25px 120px 25px;
     }
@@ -584,14 +583,11 @@ RESPONSIVE
 		content: "\A";
 		white-space: pre;
 	}
-    .primary-app {
-		width: 45%;
+    .primary-app-wrapper {
+		width: 33.33%;
 	}
-	.secondary-app {
-		width: 94%;
-	}
-	.ternary-app {
-		width: 28.75%;
+	.ternary-app-wrapper {
+		width: 25%;
 	}
 	#nav {
 		justify-content: center;
@@ -617,19 +613,35 @@ RESPONSIVE
 		margin-bottom: 100px;
 	}
 }
+@media only screen and (max-width: 549px) {
+	.primary-app2 {
+		padding-top: 20px;
+		flex-direction: column;
+		align-items: center;
+		justify-content: center;
+	}
+	.image-item-wrapper img {
+		height: 260px;
+	}
+	.app-container {
+		width: 100%;
+	}
+	.images-container-wrapper {
+		width: 100%;
+		margin-top: 30px;
+		margin-bottom: 30px;
+	}
+	.primary-app-wrapper {
+		width: 50%;
+	}
+	.ternary-app-wrapper {
+		width: 33.3%;
+	}
+}
 @media only screen and (max-width: 479px) {
 	#main {
 		padding-top: 0;
 		height: 500px;
-	}
-	.primary-app {
-		width: 90%;
-	}
-	.secondary-app {
-		width: 90%;
-	}
-	.ternary-app {
-		width: 26.5%;
 	}
 	.ternary-app .app-title {
 		font-size: 0.8em;
@@ -654,8 +666,14 @@ RESPONSIVE
 	}
 }
 @media only screen and (max-width: 376px) {
-	.ternary-app {
-		width: 41%;
+	.primary-app-wrapper {
+		width: 100%;
+	}
+	.ternary-app-wrapper {
+		width: 50%;
+	}
+	.image-item-wrapper img {
+		height: 200px;
 	}
 }
 @media only screen and (max-height: 420px) {
