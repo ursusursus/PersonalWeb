@@ -308,11 +308,10 @@ REFERENCES
 	justify-content: space-between;
 }
 .reference {
+	display: flex;
+	flex-direction: column;
 	width: 45%;
 	margin-bottom: 100px;
-}
-.reference a {
-	color: #587792;
 }
 .reference-text {
 	text-align: justify;
@@ -328,12 +327,18 @@ REFERENCES
     color: #587792;
     font-family: "Times New Roman";
 }
-.reference-by {
+.reference-by-title, .reference-by-subtitle {
+	align-self: flex-end;
+	font-weight: bold;
+}
+.reference-by-title, a.reference-by-title {
 	margin-top: 15px;
 	font-size: 1.3em;
-	float: right;
 	color: #587792;
-	font-weight: bold;
+}
+.reference-by-subtitle, a.reference-by-subtitle {
+	font-size: 0.9em;
+	color: #8BA1B4;
 }
 
 
