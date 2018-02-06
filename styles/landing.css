@@ -54,6 +54,7 @@ a:hover {
 }
 .section {
 	padding: 80px 50px 120px 50px;
+	box-sizing: border-box;
 	width: 1200px;
 }
 #main-wrapper {
@@ -76,7 +77,7 @@ a:hover {
 }
 #main {
 	padding-top: 0;
-	height: 850px;
+	height: 100vh;
 }
 #contact {
 	padding-bottom: 50px;
@@ -186,7 +187,9 @@ a:hover {
 PORTFOLIO
 */
 .apps {
-	padding: 10px;
+	margin-left: -10px;
+	margin-right: -10px;
+	padding-bottom: 20px;
 	display: flex;
 	flex-wrap: wrap;
 	justify-content: center;
@@ -223,7 +226,7 @@ PORTFOLIO
 	align-items: center;
 }
 
-.primary-app:hover, .secondary-app:hover, .ternary-app:hover, .primary-app2:hover {
+.primary-app:hover, .secondary-app:hover, .ternary-app:hover {
   box-shadow: 0 3px 10px rgba(0,0,0,0.25), 0 5px 15px rgba(0,0,0,0.22);
 }
 .primary-app-img-container, .secondary-app-img-container, .ternary-app-img-container {
@@ -315,8 +318,13 @@ Gallery
 	object-fit: contain;
 	border-radius: 4px;
 	box-shadow: 0 1px 3px rgba(0,0,0,0.16), 0 1px 3px rgba(0,0,0,0.23);
+	transition: box-shadow 0.3s cubic-bezier(.25,.8,.25,1);
 	cursor: pointer;
 }
+.image-item-wrapper img:hover {
+  box-shadow: 0 3px 10px rgba(0,0,0,0.25), 0 5px 15px rgba(0,0,0,0.22);
+}
+
 .primary-app2-foo {
 	width: 250px;
 	text-align: center;
@@ -425,7 +433,6 @@ SERVICES
 REFERENCES
 */
 #references-container {
-	// padding: 0 100px;
 	display: flex;
 	flex-direction: row;
 	flex-wrap: wrap;
@@ -641,7 +648,6 @@ RESPONSIVE
 @media only screen and (max-width: 479px) {
 	#main {
 		padding-top: 0;
-		height: 500px;
 	}
 	.ternary-app .app-title {
 		font-size: 0.8em;
