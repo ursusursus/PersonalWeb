@@ -55,7 +55,7 @@ a:hover {
 .section {
 	padding: 80px 50px 120px 50px;
 	box-sizing: border-box;
-	width: 1200px;
+	width: 1400px;
 }
 #main-wrapper {
 	background-color: #f6f8fa;
@@ -447,9 +447,39 @@ REFERENCES
 	flex-wrap: wrap;
 	justify-content: space-between;
 }
-.reference {
+.reference-container {
 	width: 45%;
-	margin-bottom: 100px;
+	display: flex;
+	flex-direction: column;
+}
+.reference {
+	width: 100%;
+	margin-bottom: 140px;
+	display: flex;
+	flex-direction: row;
+}
+.reference-logo-container {
+	width: 100px;
+	height: 100px;
+	flex-shrink: 0;
+	border-radius: 50%;
+	margin-right: 25px;
+	background-color: #FFFFFF;
+	border-style: solid;
+	border-width: 5px;
+	padding: 10px;
+	box-sizing: border-box;
+	border-color: #f6f8fa;
+}
+.reference-logo-container img {
+	object-fit: scale-down;
+	width: 100%;
+	height: 100%;
+}
+.reference-text-container {
+	flex-grow: 1;
+	display: flex;
+	flex-direction: column;
 }
 .reference a {
 	color: #587792;
@@ -458,13 +488,14 @@ REFERENCES
 	text-align: justify;
 	font-size: 1.1em;
 }
-.reference:before {
+.reference-container:before {
     position: relative;
+    margin-left: 125px;
     content: "\201C";
     display: block;
     text-align: center;
     line-height: .8;
-    font-size: 4.5em;
+    font-size: 6em;
     color: #587792;
     font-family: "Times New Roman";
 }
@@ -474,6 +505,11 @@ REFERENCES
 	float: right;
 	color: #587792;
 	font-weight: bold;
+}
+.reference-by-subtitle {
+	color: #8BA1B4;
+	font-weight: bold;
+	font-size: 1em;
 }
 
 
@@ -573,7 +609,7 @@ CONTACT
 /*
 RESPONSIVE
 */
-@media only screen and (max-width: 1299px) {
+@media only screen and (max-width: 1399px) {
     .section {
         width: 100%;
     }
@@ -627,6 +663,10 @@ RESPONSIVE
 	.service {
 		width: 45%;
 		margin-bottom: 100px;
+	}
+	.reference-container {
+		width: 100%;
+		margin-bottom: 80px;
 	}
 }
 @media only screen and (max-width: 549px) {
@@ -682,10 +722,6 @@ RESPONSIVE
 	.ternary-app .app-title {
 		font-size: 0.8em;
 	}
-	.reference {
-		width: 100%;
-		margin-bottom: 100px;
-	}
 	#down-caret {
 		width: 25px;
 		margin-bottom: 50px;
@@ -699,6 +735,14 @@ RESPONSIVE
 	}
 	.primary-app-img-container img {
 		height: 125px;
+	}
+	.reference-logo-container {
+		width: 75px;
+		height: 75px;
+	}
+	.reference-container:before {
+		position: relative;
+		margin-left: 100px;
 	}
 }
 @media only screen and (max-width: 376px) {
