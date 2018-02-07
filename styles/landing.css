@@ -449,12 +449,12 @@ REFERENCES
 }
 .reference-container {
 	width: 45%;
+	margin-bottom: 140px;
 	display: flex;
 	flex-direction: column;
 }
 .reference {
 	width: 100%;
-	margin-bottom: 140px;
 	display: flex;
 	flex-direction: row;
 }
@@ -683,7 +683,6 @@ RESPONSIVE
 	* Vertical gallery
 	*/
 	.primary-app2 {
-		//padding-top: 20px;
 		flex-direction: column;
 		align-items: center;
 		justify-content: center;
