@@ -381,6 +381,9 @@ body {
 	visibility: hidden;
 	transition: opacity 250ms;
 }
+.fullscreen-container .scroll {
+	opacity: 1;
+}
 .is-fullscreen {
 	opacity: 1;
 	visibility: visible;

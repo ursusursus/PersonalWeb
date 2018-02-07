@@ -528,6 +528,12 @@
 	<div class="fullscreen-container">
 		<img id="fullscreen-cancel" src="images/cancel.svg">
 		<img id="fullscreen-screen" src="images/screens/freebooks3.png">
+		<div class="scroll back">
+			<img src="images/back.svg">
+		</div>
+		<div class="scroll next">
+			<img src="images/next.svg">
+		</div>
 	</div>
 	<script>
 	  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
@@ -541,43 +547,99 @@
 	<script>
 		$(document).ready(function() {
 			// Gallery scrolling
-			$(".back").click(function(event) {
+			$("#portfolio .back").click(function(event) {
 				scrollGallery(event.target, false);
 			});
-			$(".next").click(function(event) {
+			$("#portfolio .next").click(function(event) {
 				scrollGallery(event.target, true);
 			});
-			function scrollGallery(button, nextOrBack) {
-				var imagesContainer = button.parentElement.getElementsByClassName("images-container-inner")[0];
-				$(imagesContainer).animate({
-					scrollLeft: nextOrBack ? "+=300" : "-=300"
-	    		}, 350);
-			}
+			$(".fullscreen-container .back").click(function(event) {
+				showNextOrPrevious(false);
+			});
+			$(".fullscreen-container .next").click(function(event) {
+				showNextOrPrevious(true);
+			});
 
 			// Gallery fullscreen
 			$(".image-item-wrapper img").click(function(event) {
-				var clickedImage = $(event.target).attr("src");
-				$("#fullscreen-screen").attr("src", clickedImage);
+				openGallery($(event.target));
+			});
+			$("#fullscreen-cancel").click(function(event) {
+				closeGallery();
+			});
+
+			function openGallery(clickedImg) {
+				if (!clickedImg) return;
+				setGalleryImgSrc(clickedImg.attr("src"));
 
 				showFullscreenGallery(true);
 				$(document).keydown(function (e) {
 		  			if (e.keyCode == 27) { // escape
-		  				showFullscreenGallery(false);
+						closeGallery();
+
+					} else if (e.keyCode == 37) { // left
+						showNextOrPrevious(false);
+
+					} else if (e.keyCode == 39) { // right
+						showNextOrPrevious(true);
 		  			}
 				});
-			});
-			$("#fullscreen-cancel").click(function(event) {
+			}
+
+			function closeGallery() {
 				showFullscreenGallery(false);
 				$(document).unbind("keydown");
-			});
+			}
+
+			function scrollGallery(button, nextOrBack) {
+				var imagesContainer = button.parentElement.getElementsByClassName("images-container-inner")[0];
+				$(imagesContainer).animate({
+					scrollLeft: nextOrBack ? "+=300" : "-=300"
+				}, 350);
+			}
+
 			function showFullscreenGallery(show) {
 				if(show) {
-					$(".fullscreen-container").addClass("is-fullscreen");
-					$("body").css("overflow", "hidden"); // Hide scrollbar
+					if (!$(".fullscreen-container").hasClass("is-fullscreen")) {
+						$(".fullscreen-container").addClass("is-fullscreen");
+						$("body").css("overflow", "hidden"); // Hide scrollbar
+					}
 				} else {
-					$(".fullscreen-container").removeClass("is-fullscreen");
-					$("body").css("overflow", "scroll"); // Show scrollbar
+					if ($(".fullscreen-container").hasClass("is-fullscreen")) {
+						$(".fullscreen-container").removeClass("is-fullscreen");
+						$("body").css("overflow", "scroll"); // Show scrollbar
+					}
 				}
+			}
+
+			function showNextOrPrevious(nextOrPrevious) {
+				var currentSrc = $("#fullscreen-screen").attr("src");
+				var imgSrc = getNextOrPreviousImgSrc(nextOrPrevious);
+				if (imgSrc) {
+					setGalleryImgSrc(imgSrc);
+				}
+			}
+
+			function getNextOrPreviousImgSrc(nextOrPrevious) {
+				var currentSrc = $("#fullscreen-screen").attr("src");
+				var currentImg = $("#portfolio [src=\"" + currentSrc + "\"]");
+				if (currentImg) {
+					var parent = currentImg.parent();
+					if (parent) {
+						var imgWrapper = nextOrPrevious ? parent.next() : parent.prev();
+						if (imgWrapper) {
+							var img = imgWrapper.find("img");
+							if (img) {
+								return img.attr("src");
+							}
+						}
+					}
+				}
+				return null;
+			}
+
+			function setGalleryImgSrc(imgSrc) {
+				$("#fullscreen-screen").attr("src", imgSrc);
 			}
 		});
 	</script>
