@@ -106,7 +106,7 @@ a:hover {
  NAVIGATION
 */
 .nav {
-	height: 100px;
+	height: 75px;
 	width: 1200px;
 	padding-right: 50px;
 	padding-left: 50px;
@@ -116,32 +116,34 @@ a:hover {
 	align-items: center;
 	box-sizing: border-box;
 	transition: all 350ms;
-
 }
 .nav-collapsed {
 	height: 50px;
 }
 .nav-container-collapsed {
-	box-shadow: 0 1px 20px rgba(0,0,0,0.16), 0 1px 20px rgba(0,0,0,0.23);
+	box-shadow: 0 1px 10px rgba(0,0,0,0.16), 0 1px 10px rgba(0,0,0,0.23);
 }
 #nav > a {
 	margin-left: 10px;
 }
 #nav-items a {
+	color: #FFFFFF;
 	font-weight: bold;
-	font-size: 0.9em;
+	text-transform: uppercase;
+	font-size: 0.7em;
 	margin-right: 30px;
 }
 #nav-items a:last-child {
 	margin-right: 0px;
+	color: #334657;
 }
 #contact-link {
 	padding: 6px 20px 6px 20px;
 	border-radius: 50px;
-	color: #FFFFFF;
-	background-color: #587792;
+	background-color: #FFFFFF;
 }
 .langs a {
+	color: #FFFFFF;
 	margin-right: 10px;
 	font-size: 0.5em;
 }
@@ -196,7 +198,7 @@ a:hover {
 } */
 #nav-container {
 	width: 100%;
-	background-color: #FFFFFF;
+	background-color: #587792;
 	top: 0;
 	left: 0;
 	right: 0;
@@ -622,7 +624,7 @@ CONTACT
 	padding-top: 10px;
 	padding-bottom: 10px;
 	//border: 2px solid #9EBBD3;
-	background-color: #f6f8fa;
+	background-color: #FFFFFF;
 	border-radius: 50px;
 }
 #location {
