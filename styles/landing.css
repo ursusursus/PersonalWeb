@@ -55,13 +55,13 @@ a:hover {
 .section {
 	padding: 80px 50px 120px 50px;
 	box-sizing: border-box;
-	width: 1400px;
+	width: 1200px;
 }
 #main-wrapper {
-	background-color: #f6f8fa;
+	background-color: #FFFFFF;
 }
 #portfolio-wrapper {
-	// none
+	background-color: #f6f8fa;
 }
 #services-wrapper {
 	background-color: #587792;
@@ -105,26 +105,41 @@ a:hover {
 /*
  NAVIGATION
 */
-#nav {
-	height: 50px;
+.nav {
+	height: 100px;
+	width: 1200px;
+	padding-right: 50px;
+	padding-left: 50px;
 	display: flex;
 	flex-direction: row;
 	justify-content: flex-end;
 	align-items: center;
+	box-sizing: border-box;
+	transition: all 350ms;
+
+}
+.nav-collapsed {
+	height: 50px;
+}
+.nav-container-collapsed {
+	box-shadow: 0 1px 20px rgba(0,0,0,0.16), 0 1px 20px rgba(0,0,0,0.23);
 }
 #nav > a {
 	margin-left: 10px;
 }
 #nav-items a {
 	font-weight: bold;
-	font-size: 0.75em;
-	text-transform: uppercase;
+	font-size: 0.9em;
 	margin-right: 30px;
 }
 #nav-items a:last-child {
-	margin: 0;
-	padding: 3px 12px 3px 12px;
-	border: 1px solid;
+	margin-right: 0px;
+}
+#contact-link {
+	padding: 6px 20px 6px 20px;
+	border-radius: 50px;
+	color: #FFFFFF;
+	background-color: #587792;
 }
 .langs a {
 	margin-right: 10px;
@@ -155,7 +170,7 @@ a:hover {
 	justify-content: center;
 }
 #hero h1 {
-	margin-top: 100px;
+	margin-top: 200px;
 	text-align: center;
 	letter-spacing: 10px;
 	font-size: 4.5em;
@@ -179,6 +194,16 @@ a:hover {
     from   {top: 0px;}
     to {top: 25px;}
 } */
+#nav-container {
+	width: 100%;
+	background-color: #FFFFFF;
+	top: 0;
+	left: 0;
+	right: 0;
+	position: fixed;
+	z-index: 1000;
+	box-shadow: 0;
+}
 
 
 
@@ -199,6 +224,7 @@ PORTFOLIO
 	box-sizing: border-box;
 }
 .primary-app, .secondary-app, .ternary-app, .primary-app2 {
+	background-color: #FFF;
 	border-radius: 4px;
 	box-shadow: 0 1px 3px rgba(0,0,0,0.16), 0 1px 3px rgba(0,0,0,0.23);
 	transition: box-shadow 0.3s cubic-bezier(.25,.8,.25,1);
@@ -580,14 +606,24 @@ CONTACT
 	margin-bottom: 50px;
 	text-align: center;
 }
+.cta-button {
+	padding-left: 50px;
+	padding-right: 50px;
+	background-color: #f6f8fa;
+	border-radius: 50px;
+}
 #cta-email {
-	font-family: "Gibson-Light";
 	font-size: 1.5em;
-	flex-grow: 0;
-	padding: 10px;
-	color: #9EBBD3;
+	color: #334657;
+	font-weight: bold;
 	margin-bottom: 150px;
-	border: 2px solid #9EBBD3;
+	padding-left: 50px;
+	padding-right: 50px;
+	padding-top: 10px;
+	padding-bottom: 10px;
+	//border: 2px solid #9EBBD3;
+	background-color: #f6f8fa;
+	border-radius: 50px;
 }
 #location {
 	text-align: center;
