@@ -30,27 +30,29 @@
 </head>
 <body>
 	<div id="content">
-		<div id="nav-container" class="section-wrapper">
-			<div class="nav">
-				<div class="langs" id="langs-top">
-					<a href="">SK</a>
-					<a href="en/index.html">EN</a>
-				</div>
-				<div id="nav-items">
-					<a href="#portfolio">Portfólio</a>
-					<a href="#services">Služby</a>
-					<a href="#references">Referencie</a>
-					<a href="#awards">Ocenenia</a>
-					<a id="contact-link" href="#cta-text">Kontakt</a>
-				</div>
-			</div>
-		</div>
 		<div id="main-wrapper" class="section-wrapper">
 			<div id="main" class="section">
-				<div id="hero">
-					<h1><span>{</span>vlastimil<span id="quax">&#183;</span>brečka<span>}</span></h1>
-					<h2>Som Android vývojár vytvárajúci mobilné riešenia svetovej kvality.</h2>
-					<img id="down-caret" src="images/icon_down.svg" onclick="window.scrollBy(0, 300, 'smooth');" />
+				<div id="nav-container" class="section-wrapper">
+					<div class="nav">
+						<div class="langs" id="langs-top">
+							<a href="">SK</a>
+							<a href="en/index.html">EN</a>
+						</div>
+						<div id="nav-items">
+							<a href="#portfolio">Portfólio</a>
+							<a href="#services">Služby</a>
+							<a href="#references">Referencie</a>
+							<a href="#awards">Ocenenia</a>
+							<a id="contact-link" href="#cta-text">Kontakt</a>
+						</div>
+					</div>
+				</div>
+				<div id="hero-container">
+					<div id="hero">
+						<h1><span>{</span>vlastimil<span id="quax">&#183;</span>brečka<span>}</span></h1>
+						<h2>Som Android vývojár vytvárajúci mobilné riešenia svetovej kvality.</h2>
+						<img id="down-caret" src="images/icon_down.svg" onclick="window.scrollBy(0, 300, 'smooth');" />
+					</div>
 				</div>
 			</div>
 		</div>
@@ -632,20 +634,6 @@
 	</script>
 	<script>
 		$(document).ready(function() {
-			// $(window).scroll(function(event) {
-			// 	console.log("adasdsadas=" + this.scrollY);
-			// 	if(this.scrollY > 60) {
-			// 		if (!$(".nav").hasClass("nav-collapsed")) {
-			// 			$(".nav").addClass("nav-collapsed");
-			// 			$("#nav-container").addClass("nav-container-collapsed");
-			// 		}
-			// 	} else {
-			// 		if ($(".nav").hasClass("nav-collapsed")) {
-			// 			$(".nav").removeClass("nav-collapsed");
-			// 			$("#nav-container").removeClass("nav-container-collapsed");
-			// 		}
-			// 	}
-			// });
 			$("#down-caret").click(function(event) {
 				console.log("adadsa");
 				console.log($(".nav").hasClass("nav-collapsed"));
