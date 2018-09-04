@@ -543,7 +543,8 @@ REFERENCES
 	color: #587792;
 }
 .reference-by-subtitle, a.reference-by-subtitle {
-	font-size: 0.9em;
+	margin-top: 20px;
+	font-size: 1em;
 	color: #8BA1B4;
 }
 .reference-by-subtitle {
