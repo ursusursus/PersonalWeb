@@ -179,6 +179,7 @@ a:hover {
 	justify-content: center;
 }
 #hero h1 {
+	margin-top: 50px;
 	text-align: center;
 	letter-spacing: 10px;
 	font-size: 4.5em;
@@ -193,6 +194,12 @@ a:hover {
 	width: 500px;
 	text-align: center;
 	font-size: 2em;
+}
+
+#hero h3 {
+	font-size: 1.5em;
+	letter-spacing: 15px;
+	color: #587792;
 }
 #down-caret {
 	margin-top: 200px;
@@ -673,6 +680,9 @@ RESPONSIVE
 	#hero h2 {
 		font-size: 1.75em;
 	}
+	#hero h3 {
+		font-size: 1.25em;
+	}
 }
 @media only screen and (max-width: 819px) {
 	.section {
@@ -735,6 +745,9 @@ RESPONSIVE
 	#hero h2 {
 		font-size: 1.4em;
 		width: 100%;
+	}
+	#hero h3 {
+		font-size: 1em;
 	}
 	/*
 	* Vertical gallery
