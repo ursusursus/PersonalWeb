@@ -724,7 +724,12 @@
 		<div id="contact-wrapper" class="section-wrapper">
 			<div id="contact" class="section">
 				<p id="cta-text">Let&#39;s build something together.</p>
-				<a href="mailto:info@vlastimilbrecka.sk" id="cta-email">info@vlastimilbrecka.sk</a>
+				<form action="https://formspree.io/f/xanygerw" method="POST" >
+					<input name="name" placeholder="Name" required>
+					<input name="email" placeholder="Email" type="email" required>
+					<textarea name="message" placeholder="Your message…" rows="10" required></textarea>
+					<button type="submit">Submit</button>
+				</form>
 				<div class="icons">
 					<a href="https://play.google.com/store/apps/developer?id=ursus&hl=sk" class="icon">
 						<img src="../images/icon_play.svg">

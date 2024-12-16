@@ -724,7 +724,12 @@
 		<div id="contact-wrapper" class="section-wrapper">
 			<div id="contact" class="section">
 				<p id="cta-text">Vytvorme niečo spoločne.</p>
-				<a href="mailto:info@vlastimilbrecka.sk" id="cta-email">info@vlastimilbrecka.sk</a>
+				<form action="https://formspree.io/f/xanygerw" method="POST" >
+					<input name="name" placeholder="Meno" required>
+					<input name="email" placeholder="Email" type="email" required>
+					<textarea name="message" placeholder="Vaša správa…" rows="10" required></textarea>
+					<button type="submit">Odoslať</button>
+				</form>
 				<div class="icons">
 					<a href="https://play.google.com/store/apps/developer?id=ursus&hl=sk" class="icon">
 						<img src="images/icon_play.svg">
@@ -784,7 +789,6 @@
 	<script>
 		$(document).ready(function() {
 			$("#down-caret").click(function(event) {
-				console.log("adadsa");
 				console.log($(".nav").hasClass("nav-collapsed"));
 			});
 			// Gallery scrolling
