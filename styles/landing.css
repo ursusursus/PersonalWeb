@@ -585,6 +585,9 @@ AWARDS
 /*
 CONTACT
 */
+#contact h4 {
+	color: #fff;
+}
 form {
 	width: 50%;
 	display: flex;
