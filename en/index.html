@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="sk">
+<html lang="en">
 <head>
 	<meta charset=utf-8>
 	<meta name="theme-color" content="#334657">
@@ -25,8 +25,7 @@
 	<meta name="msapplication-TileColor" content="#334657">
 	<meta name="msapplication-TileImage" content="../images/ms-icon-144x144.png">
 	<link rel="stylesheet" type="text/css" href="../styles/landing.css">
-	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-</style>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
 </head>
 <body>
 	<div id="content">
@@ -724,10 +723,11 @@
 		<div id="contact-wrapper" class="section-wrapper">
 			<div id="contact" class="section">
 				<h4 class="header">Let&#39;s build something together.</h4>
-				<form action="https://formspree.io/f/xanygerw" method="POST" >
+				<form id="contact-form" action="https://formspree.io/f/xanygerw" method="POST" >
 					<input name="name" placeholder="Name" required>
 					<input name="email" placeholder="Email" type="email" required>
 					<textarea name="message" placeholder="Your message…" rows="10" required></textarea>
+					<p id="form-status"></p>
 					<button type="submit">Submit</button>
 				</form>
 				<div class="icons">
@@ -812,6 +812,41 @@
 			});
 			$("#fullscreen-cancel").click(function(event) {
 				closeGallery();
+			});
+
+			$("#contact-form").submit(function (event) {
+			    event.preventDefault();
+
+			    const $form = $(this);
+			    const url = $form.attr("action");
+			    const formData = $form.serialize();
+
+			    $.ajax({
+			        url: url,
+			        method: "POST",
+			        data: formData,
+			        dataType: "json",
+			        success: function (response) {
+			            $("#form-status")
+			                .text("Message sent successfully")
+							.addClass("visible")
+			            $form.trigger("reset");
+						setTimeout(function () {
+							$("#form-status")
+								.removeClass("visible")
+						}, 3000);
+			        },
+			        error: function (xhr, status, error) {
+						console.error("An error occurred:", error);
+						$("#form-status")
+							.text("Message failed to send")
+							.addClass("visible")
+						setTimeout(function () {
+							$("#form-status")
+								.removeClass("visible")
+						}, 3000);
+			        }
+			    });
 			});
 
 			function openGallery(clickedImg) {
