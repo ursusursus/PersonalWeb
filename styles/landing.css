@@ -58,19 +58,19 @@ a:hover {
 	width: 1320px;
 }
 #main-wrapper {
-	background-color: #F8FBFD;
+	background-color: #ffffff;
 }
 #portfolio-wrapper {
-	background-color: #FFFFFF;
+	background-color: #ffffff;
 }
 #services-wrapper {
 	background-color: #587792;
 }
 #references-wrapper {
-	// none
+	background-color: #f6f8fa;
 }
 #awards-wrapper {
-	background-color: #f6f8fa;
+	background-color: #ffffff;
 }
 #contact-wrapper {
 	background-color: #334657;
