@@ -1,940 +1,998 @@
 <!DOCTYPE html>
 <html lang="sk">
 <head>
-	<meta charset=utf-8>
-	<meta name="theme-color" content="#334657">
-	<meta name="author" content="Vlastimil Brečka">
-	<meta name="description" content="Vlastimil Brečka. Android vývojár, Bratislava. Vývoj natívnych Android aplikácií. UI/UX dizajn využívajúc Material dizajn od Googlu."/>
-	<meta name="mobile-web-app-capable" content="yes">
-	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<title>Vlastimil Brečka | Android vývojár, Bratislava</title>
-	<link rel="apple-touch-icon" sizes="57x57" href="images/apple-icon-57x57.png">
-	<link rel="apple-touch-icon" sizes="60x60" href="images/apple-icon-60x60.png">
-	<link rel="apple-touch-icon" sizes="72x72" href="images/apple-icon-72x72.png">
-	<link rel="apple-touch-icon" sizes="76x76" href="images/apple-icon-76x76.png">
-	<link rel="apple-touch-icon" sizes="114x114" href="images/apple-icon-114x114.png">
-	<link rel="apple-touch-icon" sizes="120x120" href="images/apple-icon-120x120.png">
-	<link rel="apple-touch-icon" sizes="144x144" href="images/apple-icon-144x144.png">
-	<link rel="apple-touch-icon" sizes="152x152" href="images/apple-icon-152x152.png">
-	<link rel="apple-touch-icon" sizes="180x180" href="images/apple-icon-180x180.png">
-	<link rel="icon" type="image/png" sizes="192x192"  href="images/android-icon-192x192.png">
-	<link rel="icon" type="image/png" sizes="32x32" href="images/favicon-32x32.png">
-	<link rel="icon" type="image/png" sizes="96x96" href="images/favicon-96x96.png">
-	<link rel="icon" type="image/png" sizes="16x16" href="images/favicon-16x16.png">
-	<link rel="manifest" href="images/manifest.json">
-	<meta name="msapplication-TileColor" content="#334657">
-	<meta name="msapplication-TileImage" content="images/ms-icon-144x144.png">
-	<link rel="stylesheet" type="text/css" href="styles/landing.css">
-	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <meta charset=utf-8>
+    <meta name="theme-color" content="#334657">
+    <meta name="author" content="Vlastimil Brečka">
+    <meta name="description"
+          content="Vlastimil Brečka. Android vývojár, Bratislava. Vývoj natívnych Android aplikácií. UI/UX dizajn využívajúc Material dizajn od Googlu."/>
+    <meta name="mobile-web-app-capable" content="yes">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Vlastimil Brečka | Android vývojár, Bratislava</title>
+    <link rel="apple-touch-icon" sizes="57x57" href="images/apple-icon-57x57.png">
+    <link rel="apple-touch-icon" sizes="60x60" href="images/apple-icon-60x60.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="images/apple-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="images/apple-icon-76x76.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="images/apple-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="images/apple-icon-120x120.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="images/apple-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="images/apple-icon-152x152.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="images/apple-icon-180x180.png">
+    <link rel="icon" type="image/png" sizes="192x192" href="images/android-icon-192x192.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="images/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="96x96" href="images/favicon-96x96.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="images/favicon-16x16.png">
+    <link rel="manifest" href="images/manifest.json">
+    <meta name="msapplication-TileColor" content="#334657">
+    <meta name="msapplication-TileImage" content="images/ms-icon-144x144.png">
+    <link rel="stylesheet" type="text/css" href="styles/landing.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
 </head>
 <body>
-	<div id="content">
-		<div id="main-wrapper" class="section-wrapper">
-			<div id="main" class="section">
-				<div id="nav-container" class="section-wrapper">
-					<div class="nav">
-						<div class="langs" id="langs-top">
-							<a href="">SK</a>
-							<a href="en/index.html">EN</a>
-						</div>
-						<div id="nav-items">
-							<a href="#portfolio">Portfólio</a>
-							<a href="#services">Expertíza</a>
-							<a href="#references">Referencie</a>
-							<a href="#awards">Ocenenia</a>
-							<a href="#contact" id="contact-link">Kontakt</a>
-						</div>
-					</div>
-				</div>
-				<div id="hero-container">
-					<div id="hero">
-						<h3>URSUS SOFTWARE</h3>
-						<h1><span>{</span>vlastimil<span id="quax">&#183;</span>brečka<span>}</span></h1>
-						<h2>Som Android vývojár vytvárajúci mobilné riešenia svetovej kvality.</h2>
-						<img id="down-caret" src="images/icon_down.svg" onclick="window.scrollBy(0, 300, 'smooth');" />
-					</div>
-				</div>
-			</div>
-		</div>
-		<div id="portfolio-wrapper" class="section-wrapper">
-			<div id="portfolio" class="section">
-				<h4 id="meh" class="header">Portfólio</h4>
-				<div class="apps">
-					<div class="primary-app2-wrapper">
-						<div class="primary-app2">
-							<div class="app-container">
-								<a class="primary-app2-foo" href="https://play.google.com/store/apps/details?id=sk.o2.radost">
-									<div class="primary-app-img-container">
-										<img src="images/app_radost.png">
-									</div>
-									<div class="app-text-container">
-										<p class="app-title">Radosť</p>
-										<p class="app-desc">Self care aplikácia pre zákazníkov operátora Radosť (team lead)</p>
-										<p class="app-dl">50 000 stiahnutí</p>
-									</div>
-								</a>
-							</div>
-							<div class="images-container-wrapper">
-								<div class="scroll back">
-									<img src="images/back.svg">
-								</div>
-								<div class="images-container-inner">
-									<div class="image-item-wrapper">
-										<img src="images/screens/radost1.webp">
-									</div>
-									<div class="image-item-wrapper">
-										<img src="images/screens/radost2.webp">
-									</div>
-									<div class="image-item-wrapper">
-										<img src="images/screens/radost3.webp">
-									</div>
-									<div class="image-item-wrapper">
-										<img src="images/screens/radost4.webp">
-									</div>
-									<div class="image-item-wrapper">
-										<img src="images/screens/radost5.webp">
-									</div>
-									<div class="image-item-wrapper">
-										<img src="images/screens/radost6.webp">
-									</div>
-									<div class="image-item-wrapper">
-										<img src="images/screens/radost7.webp">
-									</div>
-								</div>
-								<div class="scroll next">
-									<img src="images/next.svg">
-								</div>
-							</div>
-						</div>
-					</div>
-					<div class="primary-app2-wrapper">
-						<div class="primary-app2">
-							<div class="app-container">
-								<a class="primary-app2-foo" href="https://play.google.com/store/apps/details?id=sk.o2.mojeo2">
-									<div class="primary-app-img-container">
-										<img src="images/app_mojeo2.png">
-									</div>
-									<div class="app-text-container">
-										<p class="app-title">Moje O2</p>
-										<p class="app-desc">Self care aplikácia pre zákazníkov operátora O2 Slovensko</p>
-										<p class="app-dl">700 000 stiahnutí</p>
-									</div>
-								</a>
-							</div>
-							<div class="images-container-wrapper">
-								<div class="scroll back">
-									<img src="images/back.svg">
-								</div>
-								<div class="images-container-inner">
-									<div class="image-item-wrapper">
-										<img src="images/screens/mojeo21.jpg">
-									</div>
-									<div class="image-item-wrapper">
-										<img src="images/screens/mojeo22.jpg">
-									</div>
-									<div class="image-item-wrapper">
-										<img src="images/screens/mojeo23.jpg">
-									</div>
-									<div class="image-item-wrapper">
-										<img src="images/screens/mojeo24.jpg">
-									</div>
-									<div class="image-item-wrapper">
-										<img src="images/screens/mojeo25.jpg">
-									</div>
-								</div>
-								<div class="scroll next">
-									<img src="images/next.svg">
-								</div>
-							</div>
-						</div>
-					</div>
-					<div class="primary-app2-wrapper">
-						<div class="primary-app2">
-							<div class="app-container">
-								<a class="primary-app2-foo" href="https://play.google.com/store/apps/details?id=com.icewarp.teamchatmobile">
-									<div class="primary-app-img-container">
-										<img src="images/app_teamchat.png">
-									</div>
-									<div class="app-text-container">
-										<p class="app-title">IceWarp TeamChat</p>
-										<p class="app-desc">Komplexný skupinový chat pre podnikovú komunikáciu</p>
-										<p class="app-dl">Beta</p>
-									</div>
-								</a>
-							</div>
-							<div class="images-container-wrapper">
-								<div class="scroll back">
-									<img src="images/back.svg">
-								</div>
-								<div class="images-container-inner">
-									<div class="image-item-wrapper">
-										<img src="images/screens/teamchat1.jpg">
-									</div>
-									<div class="image-item-wrapper">
-										<img src="images/screens/teamchat2.jpg">
-									</div>
-									<div class="image-item-wrapper">
-										<img src="images/screens/teamchat3.jpg">
-									</div>
-									<div class="image-item-wrapper">
-										<img src="images/screens/teamchat4.jpg">
-									</div>
-									<div class="image-item-wrapper">
-										<img src="images/screens/teamchat5.jpg">
-									</div>
-									<div class="image-item-wrapper">
-										<img src="images/screens/teamchat6.jpg">
-									</div>
-									<div class="image-item-wrapper">
-										<img src="images/screens/teamchat7.jpg">
-									</div>
-								</div>
-								<div class="scroll next">
-									<img src="images/next.svg">
-								</div>
-							</div>
-						</div>
-					</div>
-					<div class="primary-app2-wrapper">
-						<div class="primary-app2">
-							<div class="app-container">
-								<a class="primary-app2-foo" href="https://play.google.com/store/apps/details?id=com.sygic.aura">
-									<div class="primary-app-img-container">
-										<img src="images/app_sygic.png">
-									</div>
-									<div class="app-text-container">
-										<p class="app-title">Sygic GPS Navigácia</p>
-										<p class="app-desc">Najpokročilejšia GPS navigácia pre Android (súčasť tímu)</p>
-										<p class="app-dl">100 000 000 stiahnutí</p>
-									</div>
-								</a>
-							</div>
-							<div class="images-container-wrapper">
-								<div class="scroll back">
-									<img src="images/back.svg">
-								</div>
-								<div class="images-container-inner">
-									<div class="image-item-wrapper">
-										<img src="images/screens/sygic1.jpg">
-									</div>
-									<div class="image-item-wrapper">
-										<img src="images/screens/sygic3.jpg">
-									</div>
-									<div class="image-item-wrapper">
-										<img src="images/screens/sygic6.jpg">
-									</div>
-									<div class="image-item-wrapper">
-										<img src="images/screens/sygic7.jpg">
-									</div>
-									<div class="image-item-wrapper">
-										<img src="images/screens/sygic8.jpg">
-									</div>
-									<div class="image-item-wrapper">
-										<img src="images/screens/sygic2.jpg">
-									</div>
-									<div class="image-item-wrapper">
-										<img src="images/screens/sygic4.jpg">
-									</div>
-									<div class="image-item-wrapper">
-										<img src="images/screens/sygic5.jpg">
-									</div>
-								</div>
-								<div class="scroll next">
-									<img src="images/next.svg">
-								</div>
-							</div>
-						</div>
-					</div>
-					<div class="primary-app2-wrapper">
-						<div class="primary-app2">
-							<div class="app-container">
-								<a class="primary-app2-foo" href="https://play.google.com/store/apps/details?id=com.spreadsong.freebooks">
-									<div class="primary-app-img-container">
-										<img src="images/app_freebooks.png">
-									</div>
-									<div class="app-text-container">
-										<p class="app-title">Free Books</p>
-										<p class="app-desc">Najväčšie svetové literárne klasiky v ebook a audiobook podobe</p>
-										<p class="app-dl">2 500 000 stiahnutí</p>
-									</div>
-								</a>
-							</div>
-							<div class="images-container-wrapper">
-								<div class="scroll back">
-									<img src="images/back.svg">
-								</div>
-								<div class="images-container-inner">
-									<div class="image-item-wrapper">
-										<img src="images/screens/freebooks1.jpg">
-									</div>
-									<div class="image-item-wrapper">
-										<img src="images/screens/freebooks2.jpg">
-									</div>
-									<div class="image-item-wrapper">
-										<img src="images/screens/freebooks3.jpg">
-									</div>
-									<div class="image-item-wrapper">
-										<img src="images/screens/freebooks4.jpg">
-									</div>
-									<div class="image-item-wrapper">
-										<img src="images/screens/freebooks5.jpg">
-									</div>
-									<div class="image-item-wrapper">
-										<img src="images/screens/freebooks6.jpg">
-									</div>
-								</div>
-								<div class="scroll next">
-									<img src="images/next.svg">
-								</div>
-							</div>
-						</div>
-					</div>
-					<div class="primary-app2-wrapper">
-						<div class="primary-app2">
-							<div class="app-container">
-								<a class="primary-app2-foo">
-									<div class="primary-app-img-container">
-										<img src="images/app_bbrowser.png">
-									</div>
-									<div class="app-text-container">
-										<p class="app-title">Bazoš Prehliadač</p>
-										<p class="app-desc">Najjednoduchšie prehliadanie inzerátov na Bazoši</p>
-										<p class="app-dl">150 000 stiahnutí</p>
-									</div>
-								</a>
-							</div>
-							<div class="images-container-wrapper">
-								<div class="scroll back">
-									<img src="images/back.svg">
-								</div>
-								<div class="images-container-inner">
-									<div class="image-item-wrapper">
-										<img src="images/screens/bbrowser1.jpg">
-									</div>
-									<div class="image-item-wrapper">
-										<img src="images/screens/bbrowser2.jpg">
-									</div>
-									<div class="image-item-wrapper">
-										<img src="images/screens/bbrowser3.jpg">
-									</div>
-									<div class="image-item-wrapper">
-										<img src="images/screens/bbrowser4.jpg">
-									</div>
-								</div>
-								<div class="scroll next">
-									<img src="images/next.svg">
-								</div>
-							</div>
-						</div>
-					</div>
-					<div class="primary-app2-wrapper">
-						<div class="primary-app2">
-							<div class="app-container">
-								<a class="primary-app2-foo" href="https://play.google.com/store/apps/details?id=sk.ursus.bazosagent">
-									<div class="primary-app-img-container">
-								<img src="images/app_bagent.png">
-							</div>
-								<div class="app-text-container">
-									<p class="app-title">Bazoš Agent</p>
-									<p class="app-desc">Strážny pes, ktorý automaticky hľadá nové inzeráty na Bazoši za Vás</p>
-									<p class="app-dl">100 000 stiahnutí</p>
-								</div>
-								</a>
-							</div>
-							<div class="images-container-wrapper">
-								<div class="scroll back">
-									<img src="images/back.svg">
-								</div>
-								<div class="images-container-inner">
-									<div class="image-item-wrapper">
-										<img src="images/screens/bagent1.jpg">
-									</div>
-									<div class="image-item-wrapper">
-										<img src="images/screens/bagent2.jpg">
-									</div>
-									<div class="image-item-wrapper">
-										<img src="images/screens/bagent3.jpg">
-									</div>
-									<div class="image-item-wrapper">
-										<img src="images/screens/bagent4.jpg">
-									</div>
-								</div>
-								<div class="scroll next">
-									<img src="images/next.svg">
-								</div>
-							</div>
-						</div>
-					</div>
-					<div class="primary-app2-wrapper">
-						<div class="primary-app2">
-							<div class="app-container">
-								<a class="primary-app2-foo">
-									<div class="primary-app-img-container">
-										<img src="images/app_buploader.png">
-									</div>
-									<div class="app-text-container">
-										<p class="app-title">Bazoš Pridávač</p>
-										<p class="app-desc">Najjednoduchšie pridávanie inzerátov na Bazoš</p>
-										<p class="app-dl">30 000 stiahnutí</p>
-									</div>
-								</a>
-							</div>
-							<div class="images-container-wrapper">
-								<div class="scroll back">
-									<img src="images/back.svg">
-								</div>
-								<div class="images-container-inner">
-									<div class="image-item-wrapper">
-										<img src="images/screens/buploader1.jpg">
-									</div>
-									<div class="image-item-wrapper">
-										<img src="images/screens/buploader2.jpg">
-									</div>
-									<div class="image-item-wrapper">
-										<img src="images/screens/buploader3.jpg">
-									</div>
-									<div class="image-item-wrapper">
-										<img src="images/screens/buploader4.jpg">
-									</div>
-								</div>
-								<div class="scroll next">
-									<img src="images/next.svg">
-								</div>
-							</div>
-						</div>
-					</div>
-				</div>
-				<div class="apps">
-					<div class="primary-app-wrapper">
-						<a class="primary-app">
-							<div class="primary-app-img-container">
-								<img src="images/app_aagent.png">
-							</div>
-							<div class="app-text-container">
-								<p class="app-title">Autobazár Agent</p>
-								<p class="app-desc">Nájde tvoje ďalšie auto automaticky za teba</p>
-							</div>
-						</a>
-					</div>
-					<div class="primary-app-wrapper">
-						<a class="primary-app" href="https://play.google.com/store/apps/details?id=com.songoroo.songorooApp">
-							<div class="primary-app-img-container">
-								<img src="images/app_songoroo.png">
-							</div>
-							<div class="app-text-container">
-								<p class="app-title">Songoroo</p>
-								<p class="app-desc">Osobné rádio v podniku, v ktorom sa nachádzate (lokalizačná časť)</p>
-							</div>
-						</a>
-					</div>
-					<div class="primary-app-wrapper">
-						<a class="primary-app" href="https://play.google.com/store/apps/details?id=sk.tuke.ursus.redirecto">
-							<div class="primary-app-img-container">
-								<img src="images/app_redirecto.png">
-							</div>
-							<div class="app-text-container">
-								<p class="app-title">Redirecto</p>
-								<p class="app-desc">Interiérový lokalizačný systém využívajúci Wi-Fi a Machine learning</p>
-							</div>
-						</a>
-					</div>
-					<div class="primary-app-wrapper">
-						<a class="primary-app" href="https://play.google.com/store/apps/details?id=com.awaboom.ursus.guessmynumber">
-							<div class="primary-app-img-container">
-								<img src="images/app_gmn.png">
-							</div>
-							<div class="app-text-container">
-								<p class="app-title">Guess My Number</p>
-								<p class="app-desc">Logická hra. Rebríčky top hráčov, push notifikácie, hudba, zvukové efekty</p>
-							</div>
-						</a>
-					</div>
-				</div>
-				<div class="apps">
-					<div class="ternary-app-wrapper">
-						<a class="ternary-app">
-							<div class="ternary-app-img-container">
-								<img src="images/app_loktv.png">
-							</div>
-							<div class="app-text-container">
-								<p class="app-title">Lokal TV</p>
-							</div>
-						</a>
-					</div>
-					<div class="ternary-app-wrapper">
-						<a class="ternary-app" href="https://play.google.com/store/apps/details?id=com.awaboom.radioSport">
-							<div class="ternary-app-img-container">
-								<img src="images/app_rad_sport.png">
-							</div>
-							<div class="app-text-container">
-								<p class="app-title">Radio ŠPORT</p>
-							</div>
-						</a>
-					</div>
-					<div class="ternary-app-wrapper">
-						<a class="ternary-app" href="https://play.google.com/store/apps/details?id=com.awaboom.ursus.druzstevnyzapisnik">
-							<div class="ternary-app-img-container">
-								<img src="images/app_zapisnik.png">
-							</div>
-							<div class="app-text-container">
-								<p class="app-title">Družstevný Zápisník</p>
-							</div>
-						</a>
-					</div>
-					<div class="ternary-app-wrapper">
-						<a class="ternary-app" href="https://play.google.com/store/apps/details?id=com.awaboom.ursus.nfd.prezentacie">
-							<div class="ternary-app-img-container">
-								<img src="images/app_prez_nfd.png">
-							</div>
-							<div class="app-text-container">
-								<p class="app-title">Prezentácie NFD</p>
-							</div>
-						</a>
-					</div>
-					<div class="ternary-app-wrapper">
-						<a class="ternary-app" href="https://play.google.com/store/apps/details?id=com.awaboom.ursus.lampanfd">
-							<div class="ternary-app-img-container">
-								<img src="images/app_lampa_nfd.png">
-							</div>
-							<div class="app-text-container">
-								<p class="app-title">Lampa NFD</p>
-							</div>
-						</a>
-					</div>
-				</div>
-			</div>
-		</div>
-        <div id="services-wrapper" class="section-wrapper">
-            <div id="services" class="section">
-                <h4 class="header">Expertíza</h4>
-                <div id="services-container">
-                    <div class="service">
-                        <h4 class="service-title">Umelá inteligencia</h4>
-                        <div class="chip-container">
-                            <span class="chip">AI engineering</span>
-                            <span class="chip">Deep learning</span>
-                            <span class="chip">Strojové učenie</span>
-                            <span class="chip">Computer vision</span>
-                            <span class="chip">LLM</span>
-                            <span class="chip">Trénovanie a nasadzovanie modelov</span>
+<div id="content">
+    <div id="main-wrapper" class="section-wrapper">
+        <div id="main" class="section">
+            <div id="nav-container" class="section-wrapper">
+                <div class="nav">
+                    <div class="langs" id="langs-top">
+                        <a href="">SK</a>
+                        <a href="en/index.html">EN</a>
+                    </div>
+                    <div id="nav-items">
+                        <a href="#portfolio">Portfólio</a>
+                        <a href="#services">Expertíza</a>
+                        <a href="#references">Referencie</a>
+                        <a href="#awards">Ocenenia</a>
+                        <a href="#contact" id="contact-link">Kontakt</a>
+                    </div>
+                </div>
+            </div>
+            <div id="hero-container">
+                <div id="hero">
+                    <h3>URSUS SOFTWARE</h3>
+                    <h1><span>{</span>vlastimil<span id="quax">&#183;</span>brečka<span>}</span></h1>
+                    <h2>Som Android vývojár vytvárajúci mobilné riešenia svetovej kvality.</h2>
+                    <img id="down-caret" src="images/icon_down.svg" onclick="window.scrollBy(0, 300, 'smooth');"/>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="portfolio-wrapper" class="section-wrapper">
+        <div id="portfolio" class="section">
+            <h4 id="meh" class="header">Portfólio</h4>
+            <div class="apps">
+                <div class="primary-app2-wrapper">
+                    <div class="primary-app2">
+                        <div class="app-container">
+                            <a class="primary-app2-foo"
+                               href="https://play.google.com/store/apps/details?id=sk.o2.radost">
+                                <div class="primary-app-img-container">
+                                    <img src="images/app_radost.png">
+                                </div>
+                                <div class="app-text-container">
+                                    <p class="app-title">Radosť</p>
+                                    <p class="app-desc">Self care aplikácia pre zákazníkov operátora Radosť (team
+                                        lead)</p>
+                                    <p class="app-dl">50 000 stiahnutí</p>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="images-container-wrapper">
+                            <div class="scroll back">
+                                <img src="images/back.svg">
+                            </div>
+                            <div class="images-container-inner">
+                                <div class="image-item-wrapper">
+                                    <img src="images/screens/radost1.webp">
+                                </div>
+                                <div class="image-item-wrapper">
+                                    <img src="images/screens/radost2.webp">
+                                </div>
+                                <div class="image-item-wrapper">
+                                    <img src="images/screens/radost3.webp">
+                                </div>
+                                <div class="image-item-wrapper">
+                                    <img src="images/screens/radost4.webp">
+                                </div>
+                                <div class="image-item-wrapper">
+                                    <img src="images/screens/radost5.webp">
+                                </div>
+                                <div class="image-item-wrapper">
+                                    <img src="images/screens/radost6.webp">
+                                </div>
+                                <div class="image-item-wrapper">
+                                    <img src="images/screens/radost7.webp">
+                                </div>
+                            </div>
+                            <div class="scroll next">
+                                <img src="images/next.svg">
+                            </div>
                         </div>
                     </div>
-                    <div class="service">
-                        <h4 class="service-title">Vývoj mobilných aplikácií</h4>
-                        <div class="chip-container">
-                            <span class="chip">Natívne iOS & Android aplikácie</span>
-                            <span class="chip">Kotlin Multiplatform</span>
-                            <span class="chip">Vysoký výkon</span>
-                            <span class="chip">Compose Multiplatform</span>
+                </div>
+                <div class="primary-app2-wrapper">
+                    <div class="primary-app2">
+                        <div class="app-container">
+                            <a class="primary-app2-foo"
+                               href="https://play.google.com/store/apps/details?id=sk.o2.mojeo2">
+                                <div class="primary-app-img-container">
+                                    <img src="images/app_mojeo2.png">
+                                </div>
+                                <div class="app-text-container">
+                                    <p class="app-title">Moje O2</p>
+                                    <p class="app-desc">Self care aplikácia pre zákazníkov operátora O2 Slovensko</p>
+                                    <p class="app-dl">700 000 stiahnutí</p>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="images-container-wrapper">
+                            <div class="scroll back">
+                                <img src="images/back.svg">
+                            </div>
+                            <div class="images-container-inner">
+                                <div class="image-item-wrapper">
+                                    <img src="images/screens/mojeo21.jpg">
+                                </div>
+                                <div class="image-item-wrapper">
+                                    <img src="images/screens/mojeo22.jpg">
+                                </div>
+                                <div class="image-item-wrapper">
+                                    <img src="images/screens/mojeo23.jpg">
+                                </div>
+                                <div class="image-item-wrapper">
+                                    <img src="images/screens/mojeo24.jpg">
+                                </div>
+                                <div class="image-item-wrapper">
+                                    <img src="images/screens/mojeo25.jpg">
+                                </div>
+                            </div>
+                            <div class="scroll next">
+                                <img src="images/next.svg">
+                            </div>
                         </div>
                     </div>
-                    <div class="service">
-                        <h4 class="service-title">Softvérová architektúra</h4>
-                        <div class="chip-container">
-                            <span class="chip">Manažovanie veľkých codebasov</span>
-                            <span class="chip">Modernizácia vývoja na state-of-art</span>
-                            <span class="chip">Veľké refaktory bez zastavenia vývoja</span>
+                </div>
+                <div class="primary-app2-wrapper">
+                    <div class="primary-app2">
+                        <div class="app-container">
+                            <a class="primary-app2-foo"
+                               href="https://play.google.com/store/apps/details?id=com.icewarp.teamchatmobile">
+                                <div class="primary-app-img-container">
+                                    <img src="images/app_teamchat.png">
+                                </div>
+                                <div class="app-text-container">
+                                    <p class="app-title">IceWarp TeamChat</p>
+                                    <p class="app-desc">Komplexný skupinový chat pre podnikovú komunikáciu</p>
+                                    <p class="app-dl">Beta</p>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="images-container-wrapper">
+                            <div class="scroll back">
+                                <img src="images/back.svg">
+                            </div>
+                            <div class="images-container-inner">
+                                <div class="image-item-wrapper">
+                                    <img src="images/screens/teamchat1.jpg">
+                                </div>
+                                <div class="image-item-wrapper">
+                                    <img src="images/screens/teamchat2.jpg">
+                                </div>
+                                <div class="image-item-wrapper">
+                                    <img src="images/screens/teamchat3.jpg">
+                                </div>
+                                <div class="image-item-wrapper">
+                                    <img src="images/screens/teamchat4.jpg">
+                                </div>
+                                <div class="image-item-wrapper">
+                                    <img src="images/screens/teamchat5.jpg">
+                                </div>
+                                <div class="image-item-wrapper">
+                                    <img src="images/screens/teamchat6.jpg">
+                                </div>
+                                <div class="image-item-wrapper">
+                                    <img src="images/screens/teamchat7.jpg">
+                                </div>
+                            </div>
+                            <div class="scroll next">
+                                <img src="images/next.svg">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="primary-app2-wrapper">
+                    <div class="primary-app2">
+                        <div class="app-container">
+                            <a class="primary-app2-foo"
+                               href="https://play.google.com/store/apps/details?id=com.sygic.aura">
+                                <div class="primary-app-img-container">
+                                    <img src="images/app_sygic.png">
+                                </div>
+                                <div class="app-text-container">
+                                    <p class="app-title">Sygic GPS Navigácia</p>
+                                    <p class="app-desc">Najpokročilejšia GPS navigácia pre Android (súčasť tímu)</p>
+                                    <p class="app-dl">100 000 000 stiahnutí</p>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="images-container-wrapper">
+                            <div class="scroll back">
+                                <img src="images/back.svg">
+                            </div>
+                            <div class="images-container-inner">
+                                <div class="image-item-wrapper">
+                                    <img src="images/screens/sygic1.jpg">
+                                </div>
+                                <div class="image-item-wrapper">
+                                    <img src="images/screens/sygic3.jpg">
+                                </div>
+                                <div class="image-item-wrapper">
+                                    <img src="images/screens/sygic6.jpg">
+                                </div>
+                                <div class="image-item-wrapper">
+                                    <img src="images/screens/sygic7.jpg">
+                                </div>
+                                <div class="image-item-wrapper">
+                                    <img src="images/screens/sygic8.jpg">
+                                </div>
+                                <div class="image-item-wrapper">
+                                    <img src="images/screens/sygic2.jpg">
+                                </div>
+                                <div class="image-item-wrapper">
+                                    <img src="images/screens/sygic4.jpg">
+                                </div>
+                                <div class="image-item-wrapper">
+                                    <img src="images/screens/sygic5.jpg">
+                                </div>
+                            </div>
+                            <div class="scroll next">
+                                <img src="images/next.svg">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="primary-app2-wrapper">
+                    <div class="primary-app2">
+                        <div class="app-container">
+                            <a class="primary-app2-foo"
+                               href="https://play.google.com/store/apps/details?id=com.spreadsong.freebooks">
+                                <div class="primary-app-img-container">
+                                    <img src="images/app_freebooks.png">
+                                </div>
+                                <div class="app-text-container">
+                                    <p class="app-title">Free Books</p>
+                                    <p class="app-desc">Najväčšie svetové literárne klasiky v ebook a audiobook
+                                        podobe</p>
+                                    <p class="app-dl">2 500 000 stiahnutí</p>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="images-container-wrapper">
+                            <div class="scroll back">
+                                <img src="images/back.svg">
+                            </div>
+                            <div class="images-container-inner">
+                                <div class="image-item-wrapper">
+                                    <img src="images/screens/freebooks1.jpg">
+                                </div>
+                                <div class="image-item-wrapper">
+                                    <img src="images/screens/freebooks2.jpg">
+                                </div>
+                                <div class="image-item-wrapper">
+                                    <img src="images/screens/freebooks3.jpg">
+                                </div>
+                                <div class="image-item-wrapper">
+                                    <img src="images/screens/freebooks4.jpg">
+                                </div>
+                                <div class="image-item-wrapper">
+                                    <img src="images/screens/freebooks5.jpg">
+                                </div>
+                                <div class="image-item-wrapper">
+                                    <img src="images/screens/freebooks6.jpg">
+                                </div>
+                            </div>
+                            <div class="scroll next">
+                                <img src="images/next.svg">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="primary-app2-wrapper">
+                    <div class="primary-app2">
+                        <div class="app-container">
+                            <a class="primary-app2-foo">
+                                <div class="primary-app-img-container">
+                                    <img src="images/app_bbrowser.png">
+                                </div>
+                                <div class="app-text-container">
+                                    <p class="app-title">Bazoš Prehliadač</p>
+                                    <p class="app-desc">Najjednoduchšie prehliadanie inzerátov na Bazoši</p>
+                                    <p class="app-dl">150 000 stiahnutí</p>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="images-container-wrapper">
+                            <div class="scroll back">
+                                <img src="images/back.svg">
+                            </div>
+                            <div class="images-container-inner">
+                                <div class="image-item-wrapper">
+                                    <img src="images/screens/bbrowser1.jpg">
+                                </div>
+                                <div class="image-item-wrapper">
+                                    <img src="images/screens/bbrowser2.jpg">
+                                </div>
+                                <div class="image-item-wrapper">
+                                    <img src="images/screens/bbrowser3.jpg">
+                                </div>
+                                <div class="image-item-wrapper">
+                                    <img src="images/screens/bbrowser4.jpg">
+                                </div>
+                            </div>
+                            <div class="scroll next">
+                                <img src="images/next.svg">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="primary-app2-wrapper">
+                    <div class="primary-app2">
+                        <div class="app-container">
+                            <a class="primary-app2-foo"
+                               href="https://play.google.com/store/apps/details?id=sk.ursus.bazosagent">
+                                <div class="primary-app-img-container">
+                                    <img src="images/app_bagent.png">
+                                </div>
+                                <div class="app-text-container">
+                                    <p class="app-title">Bazoš Agent</p>
+                                    <p class="app-desc">Strážny pes, ktorý automaticky hľadá nové inzeráty na Bazoši za
+                                        Vás</p>
+                                    <p class="app-dl">100 000 stiahnutí</p>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="images-container-wrapper">
+                            <div class="scroll back">
+                                <img src="images/back.svg">
+                            </div>
+                            <div class="images-container-inner">
+                                <div class="image-item-wrapper">
+                                    <img src="images/screens/bagent1.jpg">
+                                </div>
+                                <div class="image-item-wrapper">
+                                    <img src="images/screens/bagent2.jpg">
+                                </div>
+                                <div class="image-item-wrapper">
+                                    <img src="images/screens/bagent3.jpg">
+                                </div>
+                                <div class="image-item-wrapper">
+                                    <img src="images/screens/bagent4.jpg">
+                                </div>
+                            </div>
+                            <div class="scroll next">
+                                <img src="images/next.svg">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="primary-app2-wrapper">
+                    <div class="primary-app2">
+                        <div class="app-container">
+                            <a class="primary-app2-foo">
+                                <div class="primary-app-img-container">
+                                    <img src="images/app_buploader.png">
+                                </div>
+                                <div class="app-text-container">
+                                    <p class="app-title">Bazoš Pridávač</p>
+                                    <p class="app-desc">Najjednoduchšie pridávanie inzerátov na Bazoš</p>
+                                    <p class="app-dl">30 000 stiahnutí</p>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="images-container-wrapper">
+                            <div class="scroll back">
+                                <img src="images/back.svg">
+                            </div>
+                            <div class="images-container-inner">
+                                <div class="image-item-wrapper">
+                                    <img src="images/screens/buploader1.jpg">
+                                </div>
+                                <div class="image-item-wrapper">
+                                    <img src="images/screens/buploader2.jpg">
+                                </div>
+                                <div class="image-item-wrapper">
+                                    <img src="images/screens/buploader3.jpg">
+                                </div>
+                                <div class="image-item-wrapper">
+                                    <img src="images/screens/buploader4.jpg">
+                                </div>
+                            </div>
+                            <div class="scroll next">
+                                <img src="images/next.svg">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="apps">
+                <div class="primary-app-wrapper">
+                    <a class="primary-app">
+                        <div class="primary-app-img-container">
+                            <img src="images/app_aagent.png">
+                        </div>
+                        <div class="app-text-container">
+                            <p class="app-title">Autobazár Agent</p>
+                            <p class="app-desc">Nájde tvoje ďalšie auto automaticky za teba</p>
+                        </div>
+                    </a>
+                </div>
+                <div class="primary-app-wrapper">
+                    <a class="primary-app"
+                       href="https://play.google.com/store/apps/details?id=com.songoroo.songorooApp">
+                        <div class="primary-app-img-container">
+                            <img src="images/app_songoroo.png">
+                        </div>
+                        <div class="app-text-container">
+                            <p class="app-title">Songoroo</p>
+                            <p class="app-desc">Osobné rádio v podniku, v ktorom sa nachádzate (lokalizačná časť)</p>
+                        </div>
+                    </a>
+                </div>
+                <div class="primary-app-wrapper">
+                    <a class="primary-app" href="https://play.google.com/store/apps/details?id=sk.tuke.ursus.redirecto">
+                        <div class="primary-app-img-container">
+                            <img src="images/app_redirecto.png">
+                        </div>
+                        <div class="app-text-container">
+                            <p class="app-title">Redirecto</p>
+                            <p class="app-desc">Interiérový lokalizačný systém využívajúci Wi-Fi a Machine learning</p>
+                        </div>
+                    </a>
+                </div>
+                <div class="primary-app-wrapper">
+                    <a class="primary-app"
+                       href="https://play.google.com/store/apps/details?id=com.awaboom.ursus.guessmynumber">
+                        <div class="primary-app-img-container">
+                            <img src="images/app_gmn.png">
+                        </div>
+                        <div class="app-text-container">
+                            <p class="app-title">Guess My Number</p>
+                            <p class="app-desc">Logická hra. Rebríčky top hráčov, push notifikácie, hudba, zvukové
+                                efekty</p>
+                        </div>
+                    </a>
+                </div>
+            </div>
+            <div class="apps">
+                <div class="ternary-app-wrapper">
+                    <a class="ternary-app">
+                        <div class="ternary-app-img-container">
+                            <img src="images/app_loktv.png">
+                        </div>
+                        <div class="app-text-container">
+                            <p class="app-title">Lokal TV</p>
+                        </div>
+                    </a>
+                </div>
+                <div class="ternary-app-wrapper">
+                    <a class="ternary-app" href="https://play.google.com/store/apps/details?id=com.awaboom.radioSport">
+                        <div class="ternary-app-img-container">
+                            <img src="images/app_rad_sport.png">
+                        </div>
+                        <div class="app-text-container">
+                            <p class="app-title">Radio ŠPORT</p>
+                        </div>
+                    </a>
+                </div>
+                <div class="ternary-app-wrapper">
+                    <a class="ternary-app"
+                       href="https://play.google.com/store/apps/details?id=com.awaboom.ursus.druzstevnyzapisnik">
+                        <div class="ternary-app-img-container">
+                            <img src="images/app_zapisnik.png">
+                        </div>
+                        <div class="app-text-container">
+                            <p class="app-title">Družstevný Zápisník</p>
+                        </div>
+                    </a>
+                </div>
+                <div class="ternary-app-wrapper">
+                    <a class="ternary-app"
+                       href="https://play.google.com/store/apps/details?id=com.awaboom.ursus.nfd.prezentacie">
+                        <div class="ternary-app-img-container">
+                            <img src="images/app_prez_nfd.png">
+                        </div>
+                        <div class="app-text-container">
+                            <p class="app-title">Prezentácie NFD</p>
+                        </div>
+                    </a>
+                </div>
+                <div class="ternary-app-wrapper">
+                    <a class="ternary-app"
+                       href="https://play.google.com/store/apps/details?id=com.awaboom.ursus.lampanfd">
+                        <div class="ternary-app-img-container">
+                            <img src="images/app_lampa_nfd.png">
+                        </div>
+                        <div class="app-text-container">
+                            <p class="app-title">Lampa NFD</p>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="services-wrapper" class="section-wrapper">
+        <div id="services" class="section">
+            <h4 class="header">Expertíza</h4>
+            <div id="services-container">
+                <div class="service">
+                    <h4 class="service-title">Umelá inteligencia</h4>
+                    <div class="chip-container">
+                        <span class="chip">AI engineering</span>
+                        <span class="chip">Deep learning</span>
+                        <span class="chip">Strojové učenie</span>
+                        <span class="chip">Computer vision</span>
+                        <span class="chip">LLM</span>
+                        <span class="chip">Trénovanie a nasadzovanie modelov</span>
+                    </div>
+                </div>
+                <div class="service">
+                    <h4 class="service-title">Vývoj mobilných aplikácií</h4>
+                    <div class="chip-container">
+                        <span class="chip">Natívne iOS & Android aplikácie</span>
+                        <span class="chip">Kotlin Multiplatform</span>
+                        <span class="chip">Vysoký výkon</span>
+                        <span class="chip">Compose Multiplatform</span>
+                    </div>
+                </div>
+                <div class="service">
+                    <h4 class="service-title">Softvérová architektúra</h4>
+                    <div class="chip-container">
+                        <span class="chip">Manažovanie veľkých codebasov</span>
+                        <span class="chip">Modernizácia vývoja na state-of-art</span>
+                        <span class="chip">Veľké refaktory bez zastavenia vývoja</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="references-wrapper" class="section-wrapper">
+        <div id="references" class="section">
+            <h4 class="header">Referencie</span></h4>
+            <div id="references-container">
+                <div class="reference-container">
+                    <div class="reference">
+                        <div class="reference-logo-container">
+                            <img src="images/tonal.png">
+                        </div>
+                        <div class="reference-text-container">
+                            <p class="reference-text">This is a nice, clear, explanation of how to use dagger in a multi
+                                module setup. This is also very similar to what I've seen work well at Airbnb and
+                                Tonal.</p>
+                            <a class="reference-by-subtitle"
+                               href="https://twitter.com/gpeal8/status/1212914629791191041">Gabriel Peal, Tonal (Airbnb,
+                                Google)</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="reference-container">
+                    <div class="reference">
+                        <div class="reference-logo-container">
+                            <img src="images/androidweekly.png">
+                        </div>
+                        <div class="reference-text-container">
+                            <p class="reference-text">Setting up Dagger in a multi-module project is non-trivial.
+                                Vlastimil Brečka shows how to do this without using the problematic dagger.android
+                                library.</p>
+                            <a class="reference-by-subtitle" href="https://androidweekly.net/issues/issue-395">Android
+                                Weekly #395, Newsletter</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="reference-container">
+                    <div class="reference">
+                        <div class="reference-logo-container">
+                            <img src="images/icewarp.png">
+                        </div>
+                        <div class="reference-text-container">
+                            <p class="reference-text">Odvedl jste parádní práci a jste jeden z nejlepších mobilných
+                                vývojářů, se kterým jsme kdy pracovali.</p>
+                            <a class="reference-by-subtitle" href="https://www.linkedin.com/in/adampaclt/">Adam Paclt,
+                                CEO IceWarp</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="reference-container">
+                    <div class="reference">
+                        <div class="reference-logo-container">
+                            <img src="images/app_freebooks.png">
+                        </div>
+                        <div class="reference-text-container">
+                            <p class="reference-text">Vlasto is a great developer who can handle large projects and
+                                works both, very effectively and autonomously, which is extremely convenient in our long
+                                term cooperation.</p>
+                            <a class="reference-by-subtitle"
+                               href="https://play.google.com/store/apps/details?id=com.spreadsong.freebooks">Adam Surma,
+                                Free Books</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="reference-container">
+                    <div class="reference">
+                        <div class="reference-logo-container">
+                            <img src="images/app_songoroo.png">
+                        </div>
+                        <div class="reference-text-container">
+                            <p class="reference-text">Spolupráca s Vlastom je pre náš projekt Songoroo ideálna, rýchlo a
+                                flexibilne označí problém v app a navrhne riešenie. Sme spokojní a plánujeme dlhodobú
+                                spoluprácu.</p>
+                            <a class="reference-by-subtitle" href="https://www.songoroo.com/">Marek Dudáš, CEO
+                                Songoroo</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="reference-container">
+                    <div class="reference">
+                        <div class="reference-logo-container">
+                            <img src="images/trend.png">
+                        </div>
+                        <div class="reference-text-container">
+                            <p class="reference-text">Projekt slovenského vývojára Vlastimila Brečku umožňuje prehľadne
+                                a pohodlne mať pod palcom všetky nové inzeráty, ktoré človeka zaujímajú.</p>
+                            <a class="reference-by-subtitle"
+                               href="http://www.etrend.sk/technologie/appka-dna-bazos-agent-ma-inzeraty-pod-palcom.html">eTREND</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="reference-container">
+                    <div class="reference">
+                        <div class="reference-logo-container">
+                            <img src="images/brejk_black.png">
+                        </div>
+                        <div class="reference-text-container">
+                            <p class="reference-text">Bazoš Vám vďaka aplikácii od Vlastimila Brečku ušetrí zasa pár eur
+                                navyše.</p>
+                            <a class="reference-by-subtitle" href="https://www.ibreak.sk/">Brejk</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="reference-container">
+                    <div class="reference">
+                        <div class="reference-logo-container">
+                            <img src="images/mojandroid.png">
+                        </div>
+                        <div class="reference-text-container">
+                            <p class="reference-text">Bazoš agent nás už pri prvom spustení zaujal svojim jednoduchým a
+                                pekným používateľským prostredím.</p>
+                            <a class="reference-by-subtitle"
+                               href="https://www.mojandroid.sk/slovenska-android-aplikacia-bazos-agent-vyhladavajte-na-bazosi-rychlo-a-jednoducho/">MojAndroid.sk</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="reference-container">
+                    <div class="reference">
+                        <div class="reference-logo-container">
+                            <img src="images/mojandroid.png">
+                        </div>
+                        <div class="reference-text-container">
+                            <p class="reference-text">Aplikácia okrem praktických funkcií prináša aj krásne spracované a
+                                prehľadné prostredie</p>
+                            <a class="reference-by-subtitle"
+                               href="https://www.mojandroid.sk/bazos-prehliadac-inzeraty-mobil-aplikacia/">MojAndroid.sk</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="reference-container">
+                    <div class="reference">
+                        <div class="reference-logo-container">
+                            <img src="images/dotekomanie.png">
+                        </div>
+                        <div class="reference-text-container">
+                            <p class="reference-text">Aplikace nabízí velmi přehledné uživatelské prostředí, přičemž zde
+                                nalezneme i mnohá nastavení, která aplikaci ještě více zlepšují.</p>
+                            <a class="reference-by-subtitle"
+                               href="http://dotekomanie.cz/2014/04/dotekomanie-doporucuje-39-bazos-agent/">Dotekomanie.cz</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="reference-container">
+                    <div class="reference">
+                        <div class="reference-logo-container">
+                            <img src="images/svetandroida.png">
+                        </div>
+                        <div class="reference-text-container">
+                            <p class="reference-text">Vývojář „ursus“ vytvořil aplikaci, která zprostředkuje snadnou
+                                konzumaci obsahu serveru Bazoš na vašem mobilním telefonu.</p>
+                            <a class="reference-by-subtitle"
+                               href="https://www.svetandroida.cz/android-aplikace-google-play-117-201601">SvětAndroida.cz</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="reference-container">
+                    <div class="reference">
+                        <div class="reference-logo-container">
+                            <img src="images/finanza.png">
+                        </div>
+                        <div class="reference-text-container">
+                            <p class="reference-text">Plusom je tiež príjemné používateľské prostredie a veľmi
+                                príťažlivá grafika, ktorá je na neporovnateľne lepšej úrovni ako internetová verzia
+                                portálu.</p>
+                            <a class="reference-by-subtitle"
+                               href="http://finanza.sk/bazos-sk-agent-setri-cas-aj-peniaze/">Finanza.sk</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="reference-container">
+                    <div class="reference">
+                        <div class="reference-logo-container">
+                            <img src="images/androidportal.png">
+                        </div>
+                        <div class="reference-text-container">
+                            <p class="reference-text">Šikovný vývojar si naozaj dal záležať na svojom produkte, ktorý po
+                                vizuálnej stránke musí redakcia len chváliť.</p>
+                            <a class="reference-by-subtitle"
+                               href="https://androidportal.zoznam.sk/">AndroidPortal.sk</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="reference-container">
+                    <div class="reference">
+                        <div class="reference-logo-container">
+                            <img src="images/androidmarket.png">
+                        </div>
+                        <div class="reference-text-container">
+                            <p class="reference-text">Aplikace BazošAgent Vám nabízí možnost automaticky sledovat nové
+                                inzeráty na populárních inzertních serverech Bazoš.sk a Bazoš.cz</p>
+                            <a class="reference-by-subtitle" href="http://androidmarket.cz/aplikace/bazos-agent/">AndroidMarket.cz</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="reference-container">
+                    <div class="reference">
+                        <div class="reference-logo-container">
+                            <img src="images/fony.png">
+                        </div>
+                        <div class="reference-text-container">
+                            <p class="reference-text">Aplikácia ponúka peknú grafiku, príjemné prostredie.</p>
+                            <a class="reference-by-subtitle"
+                               href="http://www.fony.sk/clanky/6553-android-tip-bazos-agent-minus">Fony.sk</a>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
-		<div id="references-wrapper" class="section-wrapper">
-			<div id="references" class="section">
-                <h4 class="header">Referencie</span></h4>
-				<div id="references-container">
-					<div class="reference-container">
-						<div class="reference">
-							<div class="reference-logo-container">
-								<img src="images/tonal.png">
-							</div>
-							<div class="reference-text-container">
-								<p class="reference-text">This is a nice, clear, explanation of how to use dagger in a multi module setup.  This is also very similar to what I've seen work well at Airbnb and Tonal.</p>
-								<a class="reference-by-subtitle" href="https://twitter.com/gpeal8/status/1212914629791191041">Gabriel Peal, Tonal (Airbnb, Google)</a>
-							</div>
-						</div>
-					</div>
-					<div class="reference-container">
-						<div class="reference">
-							<div class="reference-logo-container">
-								<img src="images/androidweekly.png">
-							</div>
-							<div class="reference-text-container">
-								<p class="reference-text">Setting up Dagger in a multi-module project is non-trivial. Vlastimil Brečka shows how to do this without using the problematic dagger.android library.</p>
-								<a class="reference-by-subtitle" href="https://androidweekly.net/issues/issue-395">Android Weekly #395, Newsletter</a>
-							</div>
-						</div>
-					</div>
-					<div class="reference-container">
-						<div class="reference">
-							<div class="reference-logo-container">
-								<img src="images/icewarp.png">
-							</div>
-							<div class="reference-text-container">
-								<p class="reference-text">Odvedl jste parádní práci a jste jeden z nejlepších mobilných vývojářů, se kterým jsme kdy pracovali.</p>
-								<a class="reference-by-subtitle" href="https://www.linkedin.com/in/adampaclt/">Adam Paclt, CEO IceWarp</a>
-							</div>
-						</div>
-					</div>
-					<div class="reference-container">
-						<div class="reference">
-							<div class="reference-logo-container">
-								<img src="images/app_freebooks.png">
-							</div>
-							<div class="reference-text-container">
-								<p class="reference-text">Vlasto is a great developer who can handle large projects and works both, very effectively and autonomously, which is extremely convenient in our long term cooperation.</p>
-								<a class="reference-by-subtitle" href="https://play.google.com/store/apps/details?id=com.spreadsong.freebooks">Adam Surma, Free Books</a>
-							</div>
-						</div>
-					</div>
-					<div class="reference-container">
-						<div class="reference">
-							<div class="reference-logo-container">
-								<img src="images/app_songoroo.png">
-							</div>
-							<div class="reference-text-container">
-								<p class="reference-text">Spolupráca s Vlastom je pre náš projekt Songoroo ideálna, rýchlo a flexibilne označí problém v app a navrhne riešenie. Sme spokojní a plánujeme dlhodobú spoluprácu.</p>
-								<a class="reference-by-subtitle" href="https://www.songoroo.com/">Marek Dudáš, CEO Songoroo</a>
-							</div>
-						</div>
-					</div>
-					<div class="reference-container">
-						<div class="reference">
-							<div class="reference-logo-container">
-								<img src="images/trend.png">
-							</div>
-							<div class="reference-text-container">
-								<p class="reference-text">Projekt slovenského vývojára Vlastimila Brečku umožňuje prehľadne a pohodlne mať pod palcom všetky nové inzeráty, ktoré človeka zaujímajú.</p>
-								<a class="reference-by-subtitle" href="http://www.etrend.sk/technologie/appka-dna-bazos-agent-ma-inzeraty-pod-palcom.html">eTREND</a>
-							</div>
-						</div>
-					</div>
-					<div class="reference-container">
-						<div class="reference">
-							<div class="reference-logo-container">
-								<img src="images/brejk_black.png">
-							</div>
-							<div class="reference-text-container">
-								<p class="reference-text">Bazoš Vám vďaka aplikácii od Vlastimila Brečku ušetrí zasa pár eur navyše.</p>
-								<a class="reference-by-subtitle" href="https://www.ibreak.sk/">Brejk</a>
-							</div>
-						</div>
-					</div>
-					<div class="reference-container">
-						<div class="reference">
-							<div class="reference-logo-container">
-								<img src="images/mojandroid.png">
-							</div>
-							<div class="reference-text-container">
-								<p class="reference-text">Bazoš agent nás už pri prvom spustení zaujal svojim jednoduchým a pekným používateľským prostredím.</p>
-								<a class="reference-by-subtitle" href="https://www.mojandroid.sk/slovenska-android-aplikacia-bazos-agent-vyhladavajte-na-bazosi-rychlo-a-jednoducho/">MojAndroid.sk</a>
-							</div>
-						</div>
-					</div>
-					<div class="reference-container">
-						<div class="reference">
-							<div class="reference-logo-container">
-								<img src="images/mojandroid.png">
-							</div>
-							<div class="reference-text-container">
-								<p class="reference-text">Aplikácia okrem praktických funkcií prináša aj krásne spracované a prehľadné prostredie</p>
-								<a class="reference-by-subtitle" href="https://www.mojandroid.sk/bazos-prehliadac-inzeraty-mobil-aplikacia/">MojAndroid.sk</a>
-							</div>
-						</div>
-					</div>
-					<div class="reference-container">
-						<div class="reference">
-							<div class="reference-logo-container">
-								<img src="images/dotekomanie.png">
-							</div>
-							<div class="reference-text-container">
-								<p class="reference-text">Aplikace nabízí velmi přehledné uživatelské prostředí, přičemž zde nalezneme i mnohá nastavení, která aplikaci ještě více zlepšují.</p>
-								<a class="reference-by-subtitle" href="http://dotekomanie.cz/2014/04/dotekomanie-doporucuje-39-bazos-agent/">Dotekomanie.cz</a>
-							</div>
-						</div>
-					</div>
-					<div class="reference-container">
-						<div class="reference">
-							<div class="reference-logo-container">
-								<img src="images/svetandroida.png">
-							</div>
-							<div class="reference-text-container">
-								<p class="reference-text">Vývojář „ursus“ vytvořil aplikaci, která zprostředkuje snadnou konzumaci obsahu serveru Bazoš na vašem mobilním telefonu.</p>
-								<a class="reference-by-subtitle" href="https://www.svetandroida.cz/android-aplikace-google-play-117-201601">SvětAndroida.cz</a>
-							</div>
-						</div>
-					</div>
-					<div class="reference-container">
-						<div class="reference">
-							<div class="reference-logo-container">
-								<img src="images/finanza.png">
-							</div>
-							<div class="reference-text-container">
-								<p class="reference-text">Plusom je tiež príjemné používateľské prostredie a veľmi príťažlivá grafika, ktorá je na neporovnateľne lepšej úrovni ako internetová verzia portálu.</p>
-								<a class="reference-by-subtitle" href="http://finanza.sk/bazos-sk-agent-setri-cas-aj-peniaze/">Finanza.sk</a>
-							</div>
-						</div>
-					</div>
-					<div class="reference-container">
-						<div class="reference">
-							<div class="reference-logo-container">
-								<img src="images/androidportal.png">
-							</div>
-							<div class="reference-text-container">
-								<p class="reference-text">Šikovný vývojar si naozaj dal záležať na svojom produkte, ktorý po vizuálnej stránke musí redakcia len chváliť.</p>
-								<a class="reference-by-subtitle" href="https://androidportal.zoznam.sk/">AndroidPortal.sk</a>
-							</div>
-						</div>
-					</div>
-					<div class="reference-container">
-						<div class="reference">
-							<div class="reference-logo-container">
-								<img src="images/androidmarket.png">
-							</div>
-							<div class="reference-text-container">
-								<p class="reference-text">Aplikace BazošAgent Vám nabízí možnost automaticky sledovat nové inzeráty na populárních inzertních serverech  Bazoš.sk a Bazoš.cz</p>
-								<a class="reference-by-subtitle" href="http://androidmarket.cz/aplikace/bazos-agent/">AndroidMarket.cz</a>
-							</div>
-						</div>
-					</div>
-					<div class="reference-container">
-						<div class="reference">
-							<div class="reference-logo-container">
-								<img src="images/fony.png">
-							</div>
-							<div class="reference-text-container">
-								<p class="reference-text">Aplikácia ponúka peknú grafiku, príjemné prostredie.</p>
-								<a class="reference-by-subtitle" href="http://www.fony.sk/clanky/6553-android-tip-bazos-agent-minus">Fony.sk</a>
-							</div>
-						</div>
-					</div>
-				</div>
-			</div>
-		</div>
-		<div id="awards-wrapper" class="section-wrapper">
-			<div id="awards" class="section">
-				<h4 class="header">Ocenenia a iné</h4>
-				<div>
-					<h3>Rozhovor</h3>
-					<p><a href="https://www.mojandroid.sk/rozhovor-brecka-bazar-prehliadac/">Vlastimil Brečka: Do appky Bazár Prehliadač chcem vložiť istú formu umelej inteligencie | ROZHOVOR</a></p>
-				</div>
-				<div>
-					<h3>Články</h3>
-					<p><a href="https://medium.com/@vlastobrecka/dagger-in-a-multi-module-project-without-dagger-android-5d9cc5ae981c">Dagger in a multi-module project without dagger.android</a></p>
-				</div>
-				<div>
-					<h3>Súťaž 4ka Android Code 2016</h3>
-					<p><a href="https://www.mojandroid.sk/4ka-android-code-2016-vitazi/">1. miesto</a> s aplikáciou Bazoš Prehliadač v kategórii Nakupovanie a predaj</p>
-				</div>
-				<div>
-					<h3>Súťaž AppsRulezz 2013</h3>
-					<p><a href="http://apps.rulezz.sk/2013/index.php?rain=works/winners&sessid57b6ba035e2df00313745cf91c198259=05cbc3ac2c722e08bc4e4fe84725d70f">4. miesto</a> s aplikáciou Bazoš Agent v kategórii Nebrandované aplikácie</p>
-					<p><a href="http://apps.rulezz.sk/2013/index.php?rain=works/winners&sessid57b6ba035e2df00313745cf91c198259=05cbc3ac2c722e08bc4e4fe84725d70f">6. miesto</a> s aplikáciou Bazoš Agent v kategórii Smartphone aplikácie</p>
-				</div>
-			</div>
-		</div>
-		<div id="contact-wrapper" class="section-wrapper">
-			<div id="contact" class="section">
-				<h4 class="header">Vytvorme niečo spoločne.</h4>
-				<form id="contact-form" action="https://formspree.io/f/xanygerw" method="POST" >
-					<input name="name" placeholder="Meno" required>
-					<input name="email" placeholder="Email" type="email" required>
-					<textarea name="message" placeholder="Vaša správa…" rows="10" required></textarea>
-					<p id="form-status"></p>
-					<button type="submit">Odoslať</button>
-				</form>
-				<div class="icons">
-					<a href="https://play.google.com/store/apps/developer?id=ursus&hl=sk" class="icon">
-						<img src="images/icon_play.svg">
-						<div>
-							<p>Google Play</p>
-						</div>
-					</a>
-					<a href="https://www.linkedin.com/in/vlastimil-brecka-b331b7a3" class="icon">
-						<img src="images/icon_linkedin.svg">
-						<div>
-							<p>LinkedIn</p>
-						</div>
-					</a>
-					<a href="http://stackoverflow.com/users/1541188/ursus?tab=profile" class="icon">
-						<img src="images/icon_stackoverflow.svg">
-						<div>
-							<p>Stack Overflow</p>
-						</div>
-					</a>
-					<a href="https://github.com/ursusursus" class="icon">
-						<img src="images/icon_github.svg">
-						<div>
-							<p>GitHub</p>
-						</div>
-					</a>
-				</div>
-				<div class="langs" id="langs-bottom">
-					<a href="">SK</a>
-					<a href="en/index.html">EN</a>
-				</div>
-				<p id="location">Bratislava, Slovensko</p>
-				<p id="disclaimer">© 2025 Vytvoril Vlastimil Brečka, Ursus Software. Všetky práva vyhradené.</p>
-			</div>
-		</div>
-	</div>
-	<div class="fullscreen-container">
-		<div id="fullscreen-container-inner">
-			<img id="fullscreen-cancel" src="images/cancel.svg">
-			<img id="fullscreen-screen" src="images/screens/freebooks3.png">
-		</div>
-		<div class="scroll back">
-			<img src="images/back.svg">
-		</div>
-		<div class="scroll next">
-			<img src="images/next.svg">
-		</div>
-	</div>
-	<script>
-	  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-	  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-	  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-	  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+    </div>
+    <div id="awards-wrapper" class="section-wrapper">
+        <div id="awards" class="section">
+            <h4 class="header">Ocenenia a iné</h4>
+            <div>
+                <h3>Rozhovor</h3>
+                <p><a href="https://www.mojandroid.sk/rozhovor-brecka-bazar-prehliadac/">Vlastimil Brečka: Do appky
+                    Bazár Prehliadač chcem vložiť istú formu umelej inteligencie | ROZHOVOR</a></p>
+            </div>
+            <div>
+                <h3>Články</h3>
+                <p>
+                    <a href="https://medium.com/@vlastobrecka/dagger-in-a-multi-module-project-without-dagger-android-5d9cc5ae981c">Dagger
+                        in a multi-module project without dagger.android</a></p>
+            </div>
+            <div>
+                <h3>Súťaž 4ka Android Code 2016</h3>
+                <p><a href="https://www.mojandroid.sk/4ka-android-code-2016-vitazi/">1. miesto</a> s aplikáciou Bazoš
+                    Prehliadač v kategórii Nakupovanie a predaj</p>
+            </div>
+            <div>
+                <h3>Súťaž AppsRulezz 2013</h3>
+                <p>
+                    <a href="http://apps.rulezz.sk/2013/index.php?rain=works/winners&sessid57b6ba035e2df00313745cf91c198259=05cbc3ac2c722e08bc4e4fe84725d70f">4.
+                        miesto</a> s aplikáciou Bazoš Agent v kategórii Nebrandované aplikácie</p>
+                <p>
+                    <a href="http://apps.rulezz.sk/2013/index.php?rain=works/winners&sessid57b6ba035e2df00313745cf91c198259=05cbc3ac2c722e08bc4e4fe84725d70f">6.
+                        miesto</a> s aplikáciou Bazoš Agent v kategórii Smartphone aplikácie</p>
+            </div>
+        </div>
+    </div>
+    <div id="contact-wrapper" class="section-wrapper">
+        <div id="contact" class="section">
+            <h4 class="header">Vytvorme niečo spoločne.</h4>
+            <form id="contact-form" action="https://formspree.io/f/xanygerw" method="POST">
+                <input name="name" placeholder="Meno" required>
+                <input name="email" placeholder="Email" type="email" required>
+                <textarea name="message" placeholder="Vaša správa…" rows="10" required></textarea>
+                <p id="form-status"></p>
+                <button type="submit">Odoslať</button>
+            </form>
+            <div class="icons">
+                <a href="https://play.google.com/store/apps/developer?id=ursus&hl=sk" class="icon">
+                    <img src="images/icon_play.svg">
+                    <div>
+                        <p>Google Play</p>
+                    </div>
+                </a>
+                <a href="https://www.linkedin.com/in/vlastimil-brecka-b331b7a3" class="icon">
+                    <img src="images/icon_linkedin.svg">
+                    <div>
+                        <p>LinkedIn</p>
+                    </div>
+                </a>
+                <a href="http://stackoverflow.com/users/1541188/ursus?tab=profile" class="icon">
+                    <img src="images/icon_stackoverflow.svg">
+                    <div>
+                        <p>Stack Overflow</p>
+                    </div>
+                </a>
+                <a href="https://github.com/ursusursus" class="icon">
+                    <img src="images/icon_github.svg">
+                    <div>
+                        <p>GitHub</p>
+                    </div>
+                </a>
+            </div>
+            <div class="langs" id="langs-bottom">
+                <a href="">SK</a>
+                <a href="en/index.html">EN</a>
+            </div>
+            <p id="location">Bratislava, Slovensko</p>
+            <p id="disclaimer">© 2025 Vytvoril Vlastimil Brečka, Ursus Software. Všetky práva vyhradené.</p>
+        </div>
+    </div>
+</div>
+<div class="fullscreen-container">
+    <div id="fullscreen-container-inner">
+        <img id="fullscreen-cancel" src="images/cancel.svg">
+        <img id="fullscreen-screen" src="images/screens/freebooks3.png">
+    </div>
+    <div class="scroll back">
+        <img src="images/back.svg">
+    </div>
+    <div class="scroll next">
+        <img src="images/next.svg">
+    </div>
+</div>
+<script>
+    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+    (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+    m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+    })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
 
-	  ga('create', 'UA-89533460-1', 'auto');
-	  ga('send', 'pageview');
-	</script>
-	<script>
-		$(document).ready(function() {
-			$("#down-caret").click(function(event) {
-				console.log($(".nav").hasClass("nav-collapsed"));
-			});
-			// Gallery scrolling
-			$("#portfolio .back").click(function(event) {
-				scrollGallery(event.target, false);
-			});
-			$("#portfolio .next").click(function(event) {
-				scrollGallery(event.target, true);
-			});
-			$(".fullscreen-container .back").click(function(event) {
-				showNextOrPrevious(false);
-			});
-			$(".fullscreen-container .next").click(function(event) {
-				showNextOrPrevious(true);
-			});
+    ga('create', 'UA-89533460-1', 'auto');
+    ga('send', 'pageview');
+</script>
+<script>
+    $(document).ready(function() {
+        $("#down-caret").click(function(event) {
+            console.log($(".nav").hasClass("nav-collapsed"));
+        });
+        // Gallery scrolling
+        $("#portfolio .back").click(function(event) {
+            scrollGallery(event.target, false);
+        });
+        $("#portfolio .next").click(function(event) {
+            scrollGallery(event.target, true);
+        });
+        $(".fullscreen-container .back").click(function(event) {
+            showNextOrPrevious(false);
+        });
+        $(".fullscreen-container .next").click(function(event) {
+            showNextOrPrevious(true);
+        });
 
-			// Gallery fullscreen
-			$(".image-item-wrapper img").click(function(event) {
-				openGallery($(event.target));
-			});
-			$("#fullscreen-cancel").click(function(event) {
-				closeGallery();
-			});
+        // Gallery fullscreen
+        $(".image-item-wrapper img").click(function(event) {
+            openGallery($(event.target));
+        });
+        $("#fullscreen-cancel").click(function(event) {
+            closeGallery();
+        });
 
-			$("#contact-form").submit(function (event) {
-			    event.preventDefault();
+        $("#contact-form").submit(function (event) {
+            event.preventDefault();
 
-			    const $form = $(this);
-			    const url = $form.attr("action");
-			    const formData = $form.serialize();
+            const $form = $(this);
+            const url = $form.attr("action");
+            const formData = $form.serialize();
 
-			    $.ajax({
-			        url: url,
-			        method: "POST",
-			        data: formData,
-			        dataType: "json",
-			        success: function (response) {
-			            $("#form-status")
-			                .text("Správa úspešne odoslaná")
-							.addClass("visible")
-			            $form.trigger("reset");
-						setTimeout(function () {
-							$("#form-status")
-								.removeClass("visible")
-						}, 3000);
-			        },
-			        error: function (xhr, status, error) {
-						console.error("An error occurred:", error);
-						$("#form-status")
-							.text("Správu sa nepodarilo odoslať")
-							.addClass("visible")
-						setTimeout(function () {
-							$("#form-status")
-								.removeClass("visible")
-						}, 3000);
-			        }
-			    });
-			});
+            $.ajax({
+                url: url,
+                method: "POST",
+                data: formData,
+                dataType: "json",
+                success: function (response) {
+                    $("#form-status")
+                        .text("Správa úspešne odoslaná")
+                        .addClass("visible")
+                    $form.trigger("reset");
+                    setTimeout(function () {
+                        $("#form-status")
+                            .removeClass("visible")
+                    }, 3000);
+                },
+                error: function (xhr, status, error) {
+                    console.error("An error occurred:", error);
+                    $("#form-status")
+                        .text("Správu sa nepodarilo odoslať")
+                        .addClass("visible")
+                    setTimeout(function () {
+                        $("#form-status")
+                            .removeClass("visible")
+                    }, 3000);
+                }
+            });
+        });
 
-			function openGallery(clickedImg) {
-				if (!clickedImg) return;
-				setGalleryImgSrc(clickedImg.attr("src"));
+        function openGallery(clickedImg) {
+            if (!clickedImg) return;
+            setGalleryImgSrc(clickedImg.attr("src"));
 
-				showFullscreenGallery(true);
-				$(document).keydown(function (e) {
-		  			if (e.keyCode == 27) { // escape
-						closeGallery();
+            showFullscreenGallery(true);
+            $(document).keydown(function (e) {
+                  if (e.keyCode == 27) { // escape
+                    closeGallery();
 
-					} else if (e.keyCode == 37) { // left
-						showNextOrPrevious(false);
+                } else if (e.keyCode == 37) { // left
+                    showNextOrPrevious(false);
 
-					} else if (e.keyCode == 39) { // right
-						showNextOrPrevious(true);
-		  			}
-				});
-			}
+                } else if (e.keyCode == 39) { // right
+                    showNextOrPrevious(true);
+                  }
+            });
+        }
 
-			function closeGallery() {
-				showFullscreenGallery(false);
-				$(document).unbind("keydown");
-			}
+        function closeGallery() {
+            showFullscreenGallery(false);
+            $(document).unbind("keydown");
+        }
 
-			function scrollGallery(button, nextOrBack) {
-				var imagesContainer = button.parentElement.getElementsByClassName("images-container-inner")[0];
-				$(imagesContainer).animate({
-					scrollLeft: nextOrBack ? "+=300" : "-=300"
-				}, 350);
-			}
+        function scrollGallery(button, nextOrBack) {
+            var imagesContainer = button.parentElement.getElementsByClassName("images-container-inner")[0];
+            $(imagesContainer).animate({
+                scrollLeft: nextOrBack ? "+=300" : "-=300"
+            }, 350);
+        }
 
-			function showFullscreenGallery(show) {
-				if(show) {
-					if (!$(".fullscreen-container").hasClass("is-fullscreen")) {
-						$(".fullscreen-container").addClass("is-fullscreen");
-						$("body").css("overflow", "hidden"); // Hide scrollbar
-					}
-				} else {
-					if ($(".fullscreen-container").hasClass("is-fullscreen")) {
-						$(".fullscreen-container").removeClass("is-fullscreen");
-						$("body").css("overflow", "scroll"); // Show scrollbar
-					}
-				}
-			}
+        function showFullscreenGallery(show) {
+            if(show) {
+                if (!$(".fullscreen-container").hasClass("is-fullscreen")) {
+                    $(".fullscreen-container").addClass("is-fullscreen");
+                    $("body").css("overflow", "hidden"); // Hide scrollbar
+                }
+            } else {
+                if ($(".fullscreen-container").hasClass("is-fullscreen")) {
+                    $(".fullscreen-container").removeClass("is-fullscreen");
+                    $("body").css("overflow", "scroll"); // Show scrollbar
+                }
+            }
+        }
 
-			function showNextOrPrevious(nextOrPrevious) {
-				var currentSrc = $("#fullscreen-screen").attr("src");
-				var imgSrc = getNextOrPreviousImgSrc(nextOrPrevious);
-				if (imgSrc) {
-					setGalleryImgSrc(imgSrc);
-				}
-			}
+        function showNextOrPrevious(nextOrPrevious) {
+            var currentSrc = $("#fullscreen-screen").attr("src");
+            var imgSrc = getNextOrPreviousImgSrc(nextOrPrevious);
+            if (imgSrc) {
+                setGalleryImgSrc(imgSrc);
+            }
+        }
 
-			function getNextOrPreviousImgSrc(nextOrPrevious) {
-				var currentSrc = $("#fullscreen-screen").attr("src");
-				var currentImg = $("#portfolio [src=\"" + currentSrc + "\"]");
-				if (currentImg) {
-					var parent = currentImg.parent();
-					if (parent) {
-						var imgWrapper = nextOrPrevious ? parent.next() : parent.prev();
-						if (imgWrapper) {
-							var img = imgWrapper.find("img");
-							if (img) {
-								return img.attr("src");
-							}
-						}
-					}
-				}
-				return null;
-			}
+        function getNextOrPreviousImgSrc(nextOrPrevious) {
+            var currentSrc = $("#fullscreen-screen").attr("src");
+            var currentImg = $("#portfolio [src=\"" + currentSrc + "\"]");
+            if (currentImg) {
+                var parent = currentImg.parent();
+                if (parent) {
+                    var imgWrapper = nextOrPrevious ? parent.next() : parent.prev();
+                    if (imgWrapper) {
+                        var img = imgWrapper.find("img");
+                        if (img) {
+                            return img.attr("src");
+                        }
+                    }
+                }
+            }
+            return null;
+        }
 
-			function setGalleryImgSrc(imgSrc) {
-				$("#fullscreen-screen").attr("src", imgSrc);
-			}
-		});
-	</script>
+        function setGalleryImgSrc(imgSrc) {
+            $("#fullscreen-screen").attr("src", imgSrc);
+        }
+    });
+</script>
 </body>
 </html>
