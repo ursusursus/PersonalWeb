@@ -140,7 +140,7 @@ a:hover {
 #contact-link {
 	padding: 6px 20px 6px 20px;
 	border-radius: 50px;
-	background-color: #587792;
+	background-color: #ff7a00;
 }
 .langs a {
 	color: #000;
@@ -185,7 +185,7 @@ a:hover {
 	font-size: 4.5em;
 }
 #hero span, .header span {
-	color: #587792;
+	color: #ff7a00;
 }
 #services .header span {
 	color: #fff6;
@@ -734,6 +734,20 @@ form p {
     justify-content: center;
     font-size: 0.9em;
     text-align: center;
+}
+
+.header:before,
+.header:after {
+    color: #ff7a00;
+    font-weight: bold;
+}
+.header:before {
+    content: "{";
+    margin-right: 0.25em;
+}
+.header:after {
+    content: "}";
+    margin-left: 0.25em;
 }
 
 /*
