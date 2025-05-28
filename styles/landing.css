@@ -203,6 +203,7 @@ a:hover {
 	font-size: 1.5em;
 	letter-spacing: 15px;
 	color: #587792;
+	text-align: center;
 }
 #down-caret {
 	margin-top: 200px;
@@ -236,7 +237,7 @@ PORTFOLIO
 }
 .primary-app, .secondary-app, .ternary-app, .primary-app2 {
 	background-color: #FFF;
-	border-radius: 32px;
+	border-radius: 16px;
 	box-shadow: 0 1px 3px rgba(0,0,0,0.16), 0 1px 3px rgba(0,0,0,0.23);
 	transition: box-shadow 0.3s cubic-bezier(.25,.8,.25,1);
 	display: block;
@@ -250,6 +251,7 @@ PORTFOLIO
 	width: 100%;
 }
 .primary-app2 {
+	border-radius: 32px;
 	display: flex;
 	flex-direction: row;
 	justify-content: flex-start;
