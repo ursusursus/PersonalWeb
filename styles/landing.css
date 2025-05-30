@@ -277,11 +277,12 @@ PORTFOLIO
 	background-color: #FAFAFA;
 }
 .primary-app-img-container img {
-	padding: 20px;
-	width: 75%;
+	margin: 20px;
+	width: 70%;
 	height: 100%;
 	object-fit: contain;
 	z-index: 1;
+	border-radius: 32px;
 }
 .app-text-container {
 	padding: 15px;
@@ -891,6 +892,7 @@ RESPONSIVE
 	}
 	.primary-app-img-container img {
 		height: 125px;
+		width: 125px;
 	}
 	.reference-logo-container {
 		width: 75px;
