@@ -705,8 +705,12 @@ form p {
 	text-align: center;
 }
 #location {
-	text-align: center;
+    display: flex;
+    gap: 2rem;
+}
+#location p {
 	color: #fff;
+	text-align: center;
 }
 #contact {
 	display: flex;
